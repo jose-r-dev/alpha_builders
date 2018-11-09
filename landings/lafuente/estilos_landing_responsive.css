@@ -1,0 +1,136 @@
+@media all and (max-width: 1023px) 
+{
+
+	h1, h2 {font-weight: 700; font-size: 32px; margin: 28px 0px}
+	h3 {font-weight: 400; font-size: 22px; margin: 15px 0px}
+	ol {margin: 10px 0px}
+	.cuerpo ol li {font-size: 14px}
+
+	header {padding: 15px 2%; max-width: 96%;}
+	header nav {margin: 0}
+	header .redes {display: none}
+
+	.seccionPortada p {max-width: 90%; font-size: 14px}
+
+	.seccionRenders h3 {font-size: 16px; margin: 80px 0px}
+
+	.seccionPrecios iframe  {transform: scale(0.5); width: 300px}
+
+	.seccionServicios .columnas {padding: 60px 0px}
+	.seccionServicios h3 {font-size: 28px}
+
+	.seccionFormularios p {max-width: 80%;}
+	.seccionFormularios .formulario {max-width: 80%;}
+
+	footer p {font-size: 14px; margin-bottom: 4px}
+}
+
+@media all and (max-width: 870px) 
+{
+
+	header {padding: 14px 1%; max-width: 98%;}
+	header nav ul li {font-size: 14px; margin: 0px 10px}
+	header .redes {display: none}
+
+	header {padding: 14px 6%; max-width: 88%;}
+	header .logo {max-width: 25%;}
+	header .redes {display: block; margin-right: auto; margin-left: 5px; border-left: #58595B solid 1px; padding-left: 15px}
+	header .redes ul li span {font-size: 25px !important}
+	header .redes ul li:first-of-type a span {font-size: 14px !important ; padding: 5px 6px; border: #58595B solid 1.8px;}
+
+
+	.botonMenu {display: block}
+	header nav {transition: 500ms; transition-timing-function: ease-in-out; position: fixed; height: 95vh; width: 100%; background-color: rgba(256, 256, 256, 0.8);
+		 z-index: 2; top: 70px; left: 0px; 	transform: translateX(1000px); visibility: hidden;;}
+ 
+	header nav ul {position: relative; margin-top: 80px }
+	header nav ul li {display: block; margin: 20px 30px;  }
+	nav ul li a {font-size: 20px}
+
+
+
+	.seccionRenders .columnas {flex-direction: column; flex-wrap: wrap; }
+	.seccionRenders .columnas:first-of-type {flex-direction: column-reverse}
+	.seccionRenders .columna {width: 100% !important; max-width: none !important;}
+	.seccionRenders .columna.fondoGris {margin: 0;}
+	.seccionRenders h3 {font-size: 16px; margin: 25px 0px}
+
+	
+	.seccionFormularios p {max-width: 90%;}
+	.seccionFormularios .formulario {max-width: 90%;}
+
+	footer p {font-size: 14px}
+
+	.slides {margin-bottom: 0;}
+	.slides .contenedorDesplazamiento {height: 50vw ;}
+}
+
+@media all and (max-width: 780px) 
+{
+	h1, h2 {font-size: 24px}
+	ol {margin: 30px auto}
+	.cuerpo ol {max-width: 90%;}
+	.cuerpo ol li {padding-left: 10px; font-size: 12px; line-height: 120%; margin-bottom: 15px }
+	.columnas {flex-direction: column; max-width: 100%;}
+	.columna {max-width: 100% ;}
+	.slides span {bottom: 35%; font-size: 25px}
+	
+	
+
+	.seccionPortada .fondoPortada {background-image: url("assets/fondo1.jpg"); height: 85vh; background-position-y: top; background-size: auto 85vh;
+		background-attachment: local; }
+	.seccionPortada .logoProyecto {margin: 0; height: 60vh; margin-left: 30px; padding-top: 30px; max-width: 40%;}
+	.seccionPortada p {font-size: 14px}
+
+	.seccionUbicacion .columnas {margin-bottom: 20px}
+	.seccionUbicacion .columna {background-color: rgb(250, 250, 250);}
+	.seccionUbicacion .columna h3 {font-size: 18px; text-align: center;}
+	.seccionUbicacion .columna:last-of-type {max-width: 100%;}
+
+	.seccionRenders .columna h3 {margin: 15px 0px}
+	.seccionRenders .columnas {margin-bottom: 30px}
+	.seccionRenders .columnas .columna:first-of-type {flex-direction: column-reverse}
+	.seccionRenders .columnas .columna.fondoGris {max-width: 80% !important; margin: 0px auto}
+	.seccionRenders .columnas .columna .slides {margin-bottom: 15px}
+
+	.seccionServicios h2 {padding: 10px 0px}
+	.seccionServicios h3 {font-size: 20px} 
+	.seccionServicios .responsive {display: block}
+	.seccionServicios .columnas {padding-top: 10px}
+	.seccionServicios .columnas:last-of-type {flex-direction: column-reverse; margin-top: 40px }
+	.seccionServicios .columnas .columna.iconos {max-width: 100%; }
+	.seccionServicios .columnas .columna.iconos figure {max-width: 60%; text-align: center; margin: 0px auto;}
+	.seccionServicios .columnas:last-of-type .columna.iconos figure {max-width: 40%;}
+	.seccionServicios .columnas .columna.iconos figure h3 {display: none}
+			
+	.seccionPlanos .slides .contenedorDesplazamiento {height: 130vw;} 
+	.seccionPlanos .slides .contenedorDesplazamiento .columnas {flex-direction: column-reverse}
+	.seccionPlanos .slides .contenedorDesplazamiento .columnas .columna {margin: 0; margin-bottom: 20px; max-width: none; width: 100%; text-align: center}
+	.seccionPlanos .slides .contenedorDesplazamiento h3 {font-size: 18px;}
+	.seccionPlanos .slides .contenedorDesplazamiento p {font-size: 12px;}
+	
+	.seccionFormularios .formulario {max-width: 80%;}
+	.seccionFormularios p {font-size: 12px}
+	.seccionFormularios input {font-size: 12px}
+	.seccionFormularios input[type="submit"] {font-size: 14px}
+
+	.llenarFormulario { padding: 10px 10px; bottom: 15%;  }
+	.llenarFormulario p:first-of-type {display: none}
+	.llenarFormulario a {font-size: 12px}
+
+
+	footer .columnas .columna {max-width: 80%; margin-left: 10%}
+	footer p {font-size: 12px}
+	footer .columnas .columna:first-of-type span {font-size: 14px}
+
+	footer .redes ul li:first-of-type span {font-size: 14px; padding: 2px}
+	footer .redes ul li span {font-size: 20px}
+
+	/* --------------------------ANIMACIONES-------------------- */
+
+	.activo {visibility: visible; transform: translateX(0);}
+	.sinScroll {overflow: hidden;}
+	
+}
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+    <title>Admin Alpha Builders</title>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <figure>
+                <img src="assets/logo_completo.png" alt="logo empresarial">
+            </figure>
+		</div>
+		<div>
+			<h2>Administrador</h2>
+		</div>
+	</header>
+	<div class="cuerpo">
+		<section>
+			<div class="formulario busqueda">
+				<form action="">
+					<input type="date" name="fechaInicio" id="fechaInicial">
+					<input type="date" name="fechaFinal" id="fechaFinal">
+					<input type="text" name="nombreCliente" id="nombreCliente" placeholder="Nombre de cliente" class="inactivo">
+					<label for="select_parametro_busqueda">Búsqueda</label>
+					<select name="parametro_busqueda" id="select_parametro_busqueda">
+						<option value="0">por fecha</option>
+						<option value="1">por nombre</option>
+					</select>
+					<input type="submit" value="Buscar" id="botonBuscar">
+				</form>
+			</div>
+		</section>
+		<section>
+			<div class="tabla">
+                <table>
+                    <tr class="encabezado">
+                        <td>Nombre</td>
+                        <td>Correo electronico</td>
+                        <td>Teléfono</td>
+                        <td>Mensaje</td>
+                    </tr>
+                    <tr>
+                        <td>Benito camelas</td>
+                        <td>benito@camelas.com</td>
+                        <td>0998555889</td>
+                        <td>hola quiero comprar un departamento genial y robotico</td>
+                    </tr>
+                    <tr>
+                        <td>Benito camelas</td>
+                        <td>benito@camelas.com</td>
+                        <td>0998555889</td>
+                        <td>hola quiero comprar un departamento genial y robotico</td>
+                    </tr>
+                    <tr>
+                        <td>Benito camelas</td>
+                        <td>benito@camelas.com</td>
+                        <td>0998555889</td>
+                        <td>hola quiero comprar un departamento genial y robotico Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem earum animi maiores commodi optio consequatur odio sed, unde quo eius ex consectetur nesciunt explicabo inventore aperiam nemo tempora! Nesciunt, facilis?</td>
+                    </tr>
+                </table>
+
+            </div>
+		</section>
+
+	</div>
+
+	<link rel="stylesheet" href="estilos_admin.css">
+	<script src="busquedas.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+@media all and (max-width: 1800px) 
+{
+	h1{max-width: 80%;}
+
+}
+
+@media all and (max-width: 1600px) 
+{
+	h1{max-width: 90%;}
+
+}
+
+@media all and (max-width: 1400px) 
+{
+	h1{max-width: 99%;}
+
+}
+
+@media all and (max-width: 1270px) 
+{
+	h1{font-size: 30px;}
+
+}
+@media all and (max-width: 1070px) 
+{
+	h1{font-size: 24px;}
+
+}

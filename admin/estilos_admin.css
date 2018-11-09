@@ -1,0 +1,51 @@
+
+
+body {font-family: 'Poppins', sans-serif; color: #58595B; width: 100%; position: relative; max-width: 100%; font-size: 18px; font-weight: 400 }
+p {line-height: 150%;}
+section, header, footer {width: 100%; position: relative;}
+section {background-color: white;}
+img {width: 100%; display: block}
+a {color: #58595B; font-weight: 400}
+h1, h2, h3 {text-transform: uppercase; text-align: center}
+h1, h2 {font-weight: 700; font-size: 42px; margin: 40px 0px}
+h3 {font-weight: 400; font-size: 30px; margin: 15px 0px}
+
+.columnas {display: flex; justify-content: space-around}
+.columna {max-width: 50%;}
+.fondoGris {background-color: #DFE0E0;}
+
+header {display: flex; padding: 20px 4%; align-items: center; justify-content: space-between; max-width: 90%;}
+header .logo {max-width: 15%;}
+header figure {max-width: 100%;}
+.cuerpo {max-width: 90%; margin: 0 auto; }
+
+
+.formulario {max-width: 50%; text-align: center; margin: 50px auto;}
+input {border: none; border-bottom: #58595B solid 1px; display: block; width: 90%; margin-bottom: 50px; font-size: 16px; font-family: "Poppins"}
+input[type="submit"] {background-color: #DFE0E0; border: none; border-radius: 35px; color: #221F20; text-transform: uppercase; font-size: 18px;
+	max-width: 150px; margin: 50px auto; padding: 10px 0px; cursor: pointer;}
+input {transition: 500ms}
+input:focus{outline: none; border-bottom: #58595B solid 2px}
+
+input[type="submit"] {transition: 200ms}
+label {font-size: 15px}
+select {font-family: "Poppins", sans-serif; font-size: 15px; border: none; color: #58595B}
+select:focus{outline: none; border-bottom: #58595B solid 2px}
+
+.formulario.busqueda {max-width: 100%}
+.formulario.busqueda form {width: 100%;}
+.formulario.busqueda input {display: inline-block; width: auto}
+.formulario.busqueda input[type="submit"] {max-width: auto; padding: 2px 10px; font-size: 15px}
+.formulario.busqueda input[type="date"], .formulario.busqueda select {cursor: pointer;}
+
+
+/*tabla*/
+table {font-size: 15px; max-width: 100%; margin: 0 auto;}
+table td {font-weight: 300; padding: 4px 10px;}
+table .encabezado td {background-color: #DFE0E0; font-weight: 400; font-size: 16px; text-align: center}
+table tr td:last-of-type {max-width: 40vw;}
+
+/*animaciones*/
+.activo {display: inline-block !important;}
+.inactivo {display: none !important;}
+

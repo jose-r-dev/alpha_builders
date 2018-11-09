@@ -1,0 +1,199 @@
+/*
+	gris claro textos #58595B (tambien es fondo del boton llenar form)
+	gris claro fondos #DFE0E0
+	negro textos #221F20
+	negro barras #010100
+*/
+
+/*ICOMOON*/
+@font-face {
+	font-family: 'icomoon';
+	src:  url('fuentes/icomoon.eot?mfazyu');
+	src:  url('fuentes/icomoon.eot?mfazyu#iefix') format('embedded-opentype'),
+	  url('fuentes/icomoon.ttf?mfazyu') format('truetype'),
+	  url('fuentes/icomoon.woff?mfazyu') format('woff'),
+	  url('fuentes/icomoon.svg?mfazyu#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+  
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-cheveron-down:before {	content: "\e900";  }
+  .icon-cheveron-left:before {	content: "\e901";  }
+  .icon-cheveron-right:before {	content: "\e902";  }
+  .icon-cheveron-up:before {	content: "\e903";  }
+  .icon-menu:before {	content: "\e905";  }
+  .icon-queue:before {	content: "\e904";  }
+  .icon-file-text:before {	content: "\e922";  }
+  .icon-phone:before {	content: "\e942";  }
+  .icon-facebook:before {	content: "\ea90";  }
+  .icon-instagram:before {	content: "\ea92";  }
+  .icon-whatsapp:before {	content: "\ea93";  }
+  
+  
+  
+
+/* -----------------------------------------ESTILOS GLOBALES--------------------------------------------- */
+
+
+body {font-family: 'Poppins', sans-serif; color: #58595B; width: 100%; position: relative; max-width: 100vw; font-size: 18px; font-weight: 400 }
+p {line-height: 150%;}
+section, header, footer {width: 100%; position: relative;}
+section {background-color: white;}
+img {width: 100%; display: block}
+a {color: #58595B; font-weight: 400}
+h1, h2, h3 {text-transform: uppercase; text-align: center}
+h1, h2 {font-weight: 700; font-size: 42px; margin: 40px 0px}
+h3 {font-weight: 400; font-size: 30px; margin: 15px 0px}
+ol {margin: 50px 0px}
+ol li {list-style: lower-roman; margin-left: 25px; padding-left: 20px }
+ul li {list-style: none;}
+li {font-size: 16px; line-height: 150%}
+
+
+.columnas {display: flex; justify-content: space-around}
+.columna {max-width: 50%;}
+.fondoGris {background-color: #DFE0E0;}
+.slides {position: relative;margin-bottom: 20px;}
+.redes {max-width: 130px;}
+.redes ul li {margin: 0px 1px; font-size: 30px}
+.redes ul li span {vertical-align: middle}
+.redes ul li:first-of-type a span {border: #58595B solid 2.4px; border-radius: 50%; font-size: 16px ; padding: 4px; }
+
+.responsive {display: none}
+
+
+/* ----HEADER---- */
+header {display: flex; padding: 20px 4%; align-items: center; justify-content: space-between; max-width: 92%;}
+header .logo {max-width: 15%;}
+header figure {max-width: 100%;}
+header nav {margin-left: auto; margin-right: 30px}
+header ul li {display: inline; text-transform: uppercase; margin: 0px 20px; font-weight: 700; font-size: 16px; padding: 5px 0px; text-align: left;}
+.botonMenu {font-size: 30px; cursor: pointer; background-color: white; display: none }
+
+  /*color iconos redes sociales*/
+  /* header .redes ul li:first-of-type a span {border: none; background-color: #3b5998 ; color: white;  font-size: 22px; padding: 6px}
+  header .redes ul li:last-of-type a span {background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	color: white; padding: 4px; font-size: 26px; border-radius: 25%} */
+
+/* ----PORTADA---- */
+.seccionPortada {text-align: center; }
+
+.seccionPortada .fondoPortada { height: calc(100vh - 140px);background-color: #020202; background-image: url("assets/fondo1.jpg"); background-repeat: no-repeat; 
+	background-size: auto 100vh; background-attachment: fixed; background-position-x: right;}
+.seccionPortada .logoProyecto {padding-top: 90px; max-width: 25%; margin-left: 30%;}
+.seccionPortada .textos {background-color: white; padding: 30px 0px}
+.seccionPortada p {max-width: 60%; margin: 30px auto; font-size: 16px}
+
+/* ----UBICACION---- */
+.seccionUbicacion .columnas {justify-content: space-between}
+.seccionUbicacion .columnas:first-of-type {margin-bottom: 60px}
+.seccionUbicacion .columna figure{margin-left: auto }
+.seccionUbicacion .columna:first-of-type {margin: 0px auto }
+.seccionUbicacion .columna:last-of-type {max-width: 40%;}
+.seccionUbicacion .columna h3 {text-align: left; font-weight: 700}
+.seccionUbicacion .columnas .columna:first-of-type a {background-color: #DFE0E0; border: none; border-radius: 35px; color: #221F20; text-transform: uppercase; font-size: 18px;
+	 margin: 50px auto; padding: 10px 20px; cursor: pointer;}
+
+
+/* ----PRECIOS---- */
+.seccionPrecios h2 {color: white; font-weight: 700; margin: 0px; margin-bottom: 40px}
+.seccionPrecios .fondoGris {max-width: 90%; margin: 0px auto; padding: 30px 5px 20px 5px; background-color: #D4D5D6}
+.seccionPrecios .columnas {align-items: center}
+.seccionPrecios .columna:last-of-type {margin-bottom: 20px}
+
+.seccionPrecios iframe  {transform: scale(0.8)}
+
+/* ----RENDERS---- */
+.seccionRenders h3 {font-size: 18px; margin: 150px 0px}
+.seccionRenders .columnas {justify-content: center; }
+.seccionRenders .columnas:first-of-type .columna:first-of-type, .seccionRenders .columnas:last-of-type .columna:last-of-type{max-width: 80%; width: 80%}
+.seccionRenders .columnas .columna.fondoGris {max-width: auto; width: 20%; height: max-content; margin: auto 0px}
+
+/* ----SERVICIOS---- */
+.seccionServicios h2 {color: #221F20; margin: 0px; padding: 40px 0px}
+.seccionServicios h3 {font-weight: 600; font-size: 40px; color: #58595B}
+.seccionServicios .columnas {max-width: 80%; margin: 0px auto; padding: 120px 0px; align-items: center}
+.seccionServicios .columnas:first-of-type {border-bottom: #58595B solid 1px}
+.seccionServicios .columna {max-width: 100%;}
+.seccionServicios .columnas .columna.iconos {max-width: 35%;}
+.seccionServicios ol li {font-size: 18px; margin-bottom: 8px; max-width: 100%;}
+
+/* -----PLANOS----- */
+.seccionPlanos h2 {color: #221F20 }
+.seccionPlanos .slides .contenedorDesplazamiento {height: 55vw;}
+.seccionPlanos .slides .columnas {align-items: center}
+.seccionPlanos .slides .columnas .columna:first-of-type {width: 70%; margin: auto}
+.seccionPlanos .slides .columnas .columna:last-of-type {margin-right: auto; max-width: 30%;}
+.seccionPlanos .slides {padding: 20px 50px}
+.seccionPlanos .slides figure {margin-top: 10%}
+
+/* ----FORMULARIO ---- */
+.seccionFormularios {text-align: center; margin-bottom: 60px}
+.seccionFormularios h2 {color: #221F20}
+.seccionFormularios p {max-width: 40%; margin: 20px auto; font-size: 16px; }
+
+.formulario {max-width: 50%; text-align: center; margin: 50px auto;}
+input {border: none; border-bottom: #58595B solid 1px; display: block; width: 90%; margin-bottom: 50px; font-size: 16px; font-family: "Poppins"}
+input[type="submit"] {background-color: #DFE0E0; border: none; border-radius: 35px; color: #221F20; text-transform: uppercase; font-size: 18px;
+	max-width: 150px; margin: 50px auto; padding: 10px 0px; cursor: pointer;}
+
+.seccionFormularios .flechaArr {font-size: 34px;}
+
+/* ----BOTON LLENAR FORMULARIO---- */
+.llenarFormulario {background-color: rgba(0, 0, 0, 0.6); color: white; text-align: center; padding: 20px 20px; position: fixed;
+	right: 0px; bottom: 20%; cursor: pointer; z-index: 1; }
+.llenarFormulario a {color: white}
+
+/* ----FOOTER---- */
+footer {background-color: #DFE0E0; padding: 30px 0px; padding-bottom: 28px}
+footer p {margin-bottom: 8px}
+footer ul li {display: inline;}
+footer .columnas .columna:first-of-type span {font-size: 22px; margin-right: 5px}
+
+
+/* ----SLIDES---- */
+.slides span {position: absolute; bottom: 50%; z-index: 1; background-color: rgba(0, 0, 0, 0.4); padding: 5px ; border-radius: 50%;
+	cursor: pointer; color: white; font-size: 40px}
+.slides .icon-cheveron-left {left: 8px;}
+.slides .icon-cheveron-right {right: 8px;}
+
+.slides .contenedorDesplazamiento {position: relative; width: 100%; height: 44vw; overflow: hidden; }
+.contenedorDesplazamiento ul {position: absolute; padding: 0; margin: 0; transition: 600ms; transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	max-height: 44vw} 
+.contenedorDesplazamiento ul li {display: inline-block; float: left; }
+
+
+/* ------ANIMACIONES----- */
+header nav ul li {transition: 500ms}
+header nav ul li:hover {box-shadow: #58595B 0px 1px 0px 0px }
+
+
+.slides span {transition: 500ms}
+.slides span:hover {background-color: rgba(0, 0, 0, 0.7)}
+
+input {transition: 500ms}
+input:focus{outline: none; border-bottom: #58595B solid 2px}
+
+input[type="submit"] {transition: 200ms}
+input[type="submit"]:hover {transform: scale(1.1)}
+
+.seccionFormularios .flechaArr span{transition: 500ms}
+.seccionFormularios .flechaArr:hover span { color: rgb(169, 172, 172) }
+
+.llenarFormulario {transition: 300ms}
+.llenarFormulario:hover {transform: translateY(-3px)}
