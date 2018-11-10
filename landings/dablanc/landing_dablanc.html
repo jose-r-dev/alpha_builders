@@ -447,49 +447,8 @@
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-	<script type="text/javascript">
-		(function()
-		{	
-			emailjs.init("user_LULCOs88STP0Ks1unvuCZ");
-		})(); //funcion auto invocada
-	</script>
-	<script>
-		var myform = $("form#myform");
-		myform.submit(function(event)
-		{
-			event.preventDefault();
-
-		// Change to your service ID, or keep using the default service
-		var service_id = "gmail";
-		var template_id = "formulario_landing";
-
-		myform.find("button").text("Sending...");
-		emailjs.sendForm(service_id,template_id,myform[0])
-			.then(function(){ 
-				alert("Formulario enviado!");
-				// borrar textos inputs
-				var entradas = myform.find("input");
-				console.log(entradas);
-				for (let i = 0; i < 3; i++) 
-				{
-					entradas[i].value = "";
-				}
-				//fin bloque
-				
-			myform.find("button").text("Send");
-			}, function(err) {
-			alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-			myform.find("button").text("Send");
-			});
-
-		return false;
-
-
-		});
-
-
+	<script src="../basics.js"></script>
 	
-	</script>
 </body>
 </html>
 

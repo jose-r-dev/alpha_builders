@@ -43,7 +43,7 @@
 /* -----------------------------------------ESTILOS GLOBALES--------------------------------------------- */
 
 
-body {font-family: 'Poppins', sans-serif; color: #58595B; width: 100%; position: relative; max-width: 100vw; font-size: 18px; font-weight: 400 }
+body {font-family: 'Poppins', sans-serif; color: #58595B; width: 100%; position: relative; max-width: 100vw; font-size: 18px; font-weight: 400; }
 p {line-height: 150%;}
 section, header, footer {width: 100%; position: relative;}
 section {background-color: white;}
@@ -72,20 +72,21 @@ ol li {list-style: lower-roman; padding-left: 15px; max-width: 100%;}
 .redes ul li:first-of-type a span {border: #58595B solid 3px; border-radius: 50%; font-size: 16px ; padding: 4px; }
 
 .responsive {display: none}
+.sinScroll {overflow: hidden;}
 
 
 /* --------------------------------HEADER---------------------------------- */
 header{background-image: url("assets/fondo_1.jpg"); background-repeat: no-repeat; 
-	background-size: 100%; height: 100vh;}
+	background-size: 100%; height: 100vh; background-attachment:fixed}
 header .navegacion {display: flex; padding: 20px 4%; align-items: center; justify-content: space-between; 
     max-width: 92%; }
 header .navegacion .logo {max-width: 15%;}
 header .navegacion figure {max-width: 100%;}
 header .navegacion nav {margin-left: auto; margin-right: 30px; border: #58595B 2px solid; overflow: hidden;}
 header .navegacion ul li {display: inline; text-transform: uppercase; font-weight: 700; font-size: 16px; padding: 8px 20px; text-align: left;
-	position: relative; z-index: 1;}
+	position: relative; z-index: 1; }
 header .redes ul li {padding: 0px}
-.botonMenu {font-size: 30px; cursor: pointer; background-color: white; display: none }
+.botonMenu {font-size: 30px; cursor: pointer; display: none; z-index: 1; right: 0; top: 0; position: fixed; margin: 10px 10px }
 h1{margin: 0px auto; text-align: center; font-size: 36px; margin-top: 5%; max-width: 70%;}
 h1 div {border-bottom: #58595B 2px solid; max-width: 100%; display: inline; margin: 0px 40px}
 h1 div:last-of-type {float: right;}
@@ -122,6 +123,20 @@ h1 div:last-of-type {float: right;}
 	padding: 40px; background-color: white}
 .seccionConstructora .contenedor div a {margin-right: 30%; margin-left: auto; margin-top: 20px}
 .seccionConstructora .contenedor .contenedorGeneralTexto div div figure {max-width: 100px; margin-top: 10px}
+
+.seccionConstructora .contenedor .contenedorGeneralTexto.trayectoria {max-width: 80%; display: block; margin: 0 auto}
+.seccionConstructora .contenedor .otroContenedor {display: block !important; width: 100%}
+.seccionConstructora .contenedor .contenedorGeneralTexto.trayectoria div {width: 90%; position: relative}
+
+.seccionConstructora .contenedor .contenedorGeneralTexto.trayectoria h3, .seccionConstructora .contenedor .contenedorGeneralTexto.trayectoria p {text-align: left}
+.seccionConstructora .contenedor .contenedorGeneralTexto.trayectoria p {font-size: 14px}
+.seccionConstructora .contenedor .contenedorGeneralTexto.trayectoria figure:first-of-type {max-width: 500px; float: right; }
+.seccionConstructora .contenedor .contenedorGeneralTexto.trayectoria .fila.texto {display: flex; flex-wrap: wrap }
+
+.seccionConstructora .contenedor .contenedorGeneralTexto.trayectoria .filaTexto div:first-child {max-width: 30%;}
+.seccionConstructora .contenedor .contenedorGeneralTexto.trayectoria .fila {width: 100%}
+.seccionConstructora .contenedor .contenedorGeneralTexto.trayectoria .fila figure {max-width: 100% !important; position: relative;}
+
 
 
 /* ----------------------------------------PROYECTOS-------------------------------- */
@@ -162,6 +177,11 @@ input {border: none; display: block; border-bottom: #010100 1px solid; font-fami
 .formulario {max-width: 50%; text-align: center; margin: 50px auto;}
 
 input[type="submit"] {max-width: 30%; margin: 0 auto; cursor: pointer; }
+
+/*----------------------------------------BOTON WHATSAPP-------------------------------*/
+.botonWhatsapp {position: fixed ; right: 0; bottom: 0; margin-bottom:15%; background-color: rgba(0, 0, 0, 0.7);
+	padding: 30px; font-size: 30px; z-index: 1; }
+.botonWhatsapp span {color: white}
 
 
 /* ----------------------------------------FOOTER---------------------------------------------- */

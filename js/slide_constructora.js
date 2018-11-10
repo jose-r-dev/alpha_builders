@@ -56,23 +56,28 @@ function generarTemplate(indice)
 
 						</div>
 					</div>`
-	templates[2] = `<div class="contenedorGeneralVideo">
-						<div>
-							<figure>
-								<img src="assets/proyectos/foto_lafuente.png" alt="fondo">
-							</figure>
-						</div>
-						<a href="" class="boton" id="botonVerMasConstructora"><span>Ver más</span></a>
-					</div>
-					<div class="contenedorGeneralTexto">
-						<div>
+	templates[2] = `<div>
+						<div class="contenedorGeneralTexto trayectoria">
 							<div>
-								<h3>Trayectoria</h3>
-								<p>
-									Dar a nuestros inversionistas soluciones inmobiliarias de primer nivel , enfocadas en la inteligencia constructiva y financiera.
-								</p>
-							</div>
+								<div class="filaTexto">
+									<div>
+										<h3>Trayectoria</h3>
+										<p>
+											Reinventamos la vida urbana
+										</p>
 
+									</div>
+									<figure>
+										<img src="assets/fondo_trayectoria.jpg" alt="">			
+									</figure>
+									<div class="fila">
+										<figure>
+											<img src="assets/trayectoria.png" alt="">
+										</figure>
+									</div>
+									<a href="" class="boton" id="botonVerMasConstructora"><span>Ver más</span></a>
+								</div>
+							</div>
 						</div>
 					</div>`
 
@@ -100,22 +105,35 @@ function recargarElementosDom()
 {
 	$botonVerMasConstructora = document.getElementById("botonVerMasConstructora");
 	generarEventoClickVer();
+	try 
+	{
+		$botonPlay = document.getElementById("botonPlay");
+		$videoDom = document.querySelector(".seccionConstructora .contenedor .contenedorGeneralVideo video");	
+		asignarEventoPlay();
+	} 
+	catch (error) 
+	{
+		console.log("elemento inexistente" + error)	
+	}
 }
 
-
-$botonPlay.addEventListener("click", ()=>
+function asignarEventoPlay ()
 {
-	if ($videoDom.paused == true) 
+	$botonPlay.addEventListener("click", ()=>
 	{
-		$videoDom.play();
-		$botonPlay.innerHTML = "☐";
-	} 
-	else 
-	{
-		$videoDom.pause();
-		$botonPlay.innerHTML = "►";
-	}
-});
+		if ($videoDom.paused == true) 
+		{
+			$videoDom.play();
+			$botonPlay.innerHTML = "☐";
+		} 
+		else 
+		{
+			$videoDom.pause();
+			$botonPlay.innerHTML = "►";
+		}
+	});
+
+}
 
 recargarElementosDom();
 

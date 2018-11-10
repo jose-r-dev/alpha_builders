@@ -19,10 +19,10 @@
 			</div>
 			<nav id="menuNav">
 				<ul>
-					<li><a href="#seccionUbicacion">Home</a></li>
-					<li><a href="#seccionPrecios">Constructora</a></li>
-					<li><a href="#seccionRenders">Proyectos</a></li>
-					<li><a href="#seccionServicios">Noticias</a></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#seccionConstructora">Constructora</a></li>
+					<li><a href="#seccionProyectos">Proyectos</a></li>
+					<li><a href="subpaginas/noticias.html">Noticias</a></li>
 				</ul>
 			</nav>
 			<div class="redes">
@@ -30,6 +30,9 @@
 					<li><a href="https://www.facebook.com/AlphaBuildersEC/" target="_blank">  <span class="icon-facebook"></span>  </a></li>
 					<li><a href="https://www.instagram.com/alphabuilders_ec/" target="_blank">  <span class="icon-instagram"></span>  </a></li>
 				</ul>
+			</div>
+			<div class="botonMenu responsive" id="botonMenu" >
+				<span class="icon-menu"></span>
 			</div>
 
 		</div>
@@ -41,9 +44,7 @@
 			</h1>
 		</div>
 		
-		<!-- <div class="botonMenu" id="botonMenu">
-			<span class="icon-menu"></span>
-		</div> -->
+		
 
 	</header>
 	<div class="cuerpo">
@@ -106,9 +107,9 @@
 	
 		</section>
 
-		<section class="seccionConstructora">
+		<section class="seccionConstructora" id="seccionConstructora">
 			<div class="contenedor">
-				<div class="contenedorGeneralVideo">
+					<div class="contenedorGeneralVideo">
 					<div>
 						<video src="assets/video_empresarial.mov" >Tu navegador no es compatible con VIDEO HTML5</video>
 						<div class="botonPlay" id="botonPlay">►</div>
@@ -137,7 +138,7 @@
 
 		</section>
 
-		<section class="seccionProyectos">
+		<section class="seccionProyectos" id="seccionProyectos">
 			<div>
 				<h2>Proyectos</h2>
 			</div>
@@ -196,7 +197,7 @@
 			<p>Nos interesa mantenerte al tanto de nuestros proyectos. Llena el siguiente formulario y sé parte del	grupo selecto de inversionistas inteligentes.</p>
 
 			<div class="formulario">
-				<form id="myform" method="POST">
+				<form id="myform" >
 					<input type="text" placeholder="Nombres y Apellidos" name="nombre_persona">
 					<input type="mailto" placeholder="Correo electrónico" name="correo_persona">
 					<input type="tel" placeholder="Teléfono" name="telefono_persona">
@@ -205,6 +206,12 @@
 
 			</div>
 		</section>
+
+		<div class="botonWhatsapp" id="botonWhatsapp">
+			<a href="https://wa.me/593995613509" target="_blank">
+				<span class="icon-whatsapp"></span>
+			</a>
+		</div>
 
 
 	</div>
@@ -274,9 +281,10 @@
 	<link rel="stylesheet" href="estilos.css">
 	<link rel="stylesheet" href="estilos_resposive.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+	<script src="js/basics.js"></script>
 	<script src="js/json_proyectos.js"></script>
 	<script src="js/slide_constructora.js"></script>
 	<script src="js/slide_proyectos.js"></script>
-	<!-- <script src="formulario.js"></script> -->
 </body>
 </html>
