@@ -64,6 +64,7 @@
 	.seccionPortada .contenedor div {width: 100%; margin-bottom: 30px}
 
 	.seccionConstructora .contenedor .contenedorGeneralTexto {max-width: 90% !important; transform: none}
+	.seccionConstructora .contenedor .contenedorGeneralTexto.trayectoria .filaTexto div:first-child {max-width: 90% !important;}
 	
 	.seccionProyectos h2 {font-size: 40px}
 	.seccionProyectos .contenedorProyectos {min-height: auto}
