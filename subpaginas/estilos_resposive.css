@@ -33,6 +33,8 @@
 	.seccionPortada .contenedor {flex-direction: column}
 	.seccionPortada .contenedor div {width: 100%; margin-bottom: 30px}
 
+	.seccionInterior .columnas .columna {width: 100%}
+
 	.seccionDiferenciadores .columnas {flex-direction: column-reverse}
 
 
@@ -42,6 +44,9 @@
 	footer .columnas .columna * {text-align: center !important}
 
 	.botonWhatsapp {font-size: 20px; padding: 20px}
+
+	.slides {margin-bottom: 0;}
+	.slides .contenedorDesplazamiento {height: 40vw ;}
 	
 	
 
