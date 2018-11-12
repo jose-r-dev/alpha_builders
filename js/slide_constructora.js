@@ -10,7 +10,7 @@ function generarTemplate(indice)
 	const templates = [];
 	templates[0] = `<div class="contenedorGeneralVideo">
 						<div>
-							<video src="assets/video_empresarial.mov" >Tu navegador no es compatible con VIDEO HTML5</video>
+							<video src="assets/video_empresarial.m4v" >Tu navegador no es compatible con VIDEO HTML5</video>
 							<div class="botonPlay" id="botonPlay">►</div>
 						</div>
 						<a href="" class="boton" id="botonVerMasConstructora"><span>Ver más</span></a>

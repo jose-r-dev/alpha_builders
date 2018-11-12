@@ -1,18 +1,18 @@
 @media all and (max-width: 1800px) 
 {
-	h1{max-width: 80%;}
+	h1{max-width: 75%;}
 
 }
 
 @media all and (max-width: 1600px) 
 {
-	h1{max-width: 90%;}
+	h1{max-width: 85%;}
 
 }
 
 @media all and (max-width: 1400px) 
 {
-	h1{max-width: 99%;}
+	h1{max-width: 98%;}
 	header {height: 90vh;}
 
 	
@@ -48,7 +48,7 @@
 
 @media all and (max-width: 870px) 
 {
-	header {height: 50vh; position: relative;}
+	header {height: 50vh; position: relative; background-size: auto 50vh; background-position-y: top}
 	header nav {position: absolute; width: 99%; left: 0; height: 100vh; top: 0; bottom: 0; z-index: 1; background-color: #D4D5D6; padding-top: 40px;
 		opacity: 0; transform: translateY(-2000px); transition: 1000ms; transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);}
 	header nav ul li {display: block !important; text-align: right !important; font-size: 20px !important; margin: 20px 10px;}
@@ -57,7 +57,7 @@
 
 	h1 div {transform: none !important; font-size: 18px; text-shadow: white 1px 1px 10px; margin-bottom: 10px }
 	
-	.seccionPortada {margin-top: 10px}
+	.seccionPortada {margin-top: 10px; margin-bottom: 30px}
 	.seccionPortada h2 {font-size: 20px}
 	.seccionPortada h3 {font-size: 15px}
 	.seccionPortada .contenedor {flex-direction: column}
@@ -65,6 +65,7 @@
 
 	.seccionConstructora .contenedor .contenedorGeneralTexto {max-width: 90% !important; transform: none}
 	.seccionConstructora .contenedor .contenedorGeneralTexto.trayectoria .filaTexto div:first-child {max-width: 90% !important;}
+	.seccionConstructora .contenedor .contenedorGeneralTexto div div {padding: 15px; transform: translateX(-15px) translateY(-15px); }
 	
 	.seccionProyectos h2 {font-size: 40px}
 	.seccionProyectos .contenedorProyectos {min-height: auto}
@@ -73,6 +74,8 @@
 	.seccionProyectos .itemProyecto .columnas .columna:first-of-type {margin: auto 5px}
 	.seccionProyectos .contenedorProyectos .listaProyectos ul {flex-wrap: wrap; align-items: center; }
 	.seccionProyectos .contenedorProyectos .listaProyectos ul li {max-width: 15%;}
+
+	.seccionContactos {margin-top: 0px}
 
 	footer .columnas{flex-wrap: wrap}
 	footer .columnas .columna {max-width: 290px; margin: 20px 50px}
@@ -91,9 +94,13 @@
 @media all and (max-width: 512px)
 {	
 	.seccionProyectos .contenedor {width: 300px; height: 250px;}
-	.seccionProyectos .contenedor * {font-size: 14px !important}
+	.seccionProyectos .contenedor * {font-size: 13px !important}
+
 	.seccionProyectos .contenedor .columnas {flex-direction: column; background-color: rgba(255, 255, 255, 0.5)}
 	.seccionProyectos .contenedor .columnas .columna {max-width: 100%;}
+	.seccionProyectos .contenedor .columnas .columna:first-of-type div:last-of-type p {max-width: 85px;}
+	.seccionProyectos .contenedor .columnas .columna:last-of-type figure {margin-left: auto; max-width: 100px;}
+	.seccionProyectos .boton {padding: 5px; margin-left: auto; max-width: 60px;}
 	.seccionProyectos .contenedorProyectos .listaProyectos ul li {max-width: 25%; margin: 10px 20px}
 	.seccionProyectos .contenedor .itemProyecto {padding-top: 0px}
 	.seccionProyectos .itemProyecto .columnas .columna div {margin-bottom: 10px;}

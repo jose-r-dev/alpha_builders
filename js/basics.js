@@ -16,10 +16,7 @@ $menuNavegacion.addEventListener("click", ()=>
 	document.body.classList.remove("sinScroll");
 });
 
-function enviarMensajeWhatsapp()
-{
-	
-}
+
 
 (function()	{	emailjs.init("user_LULCOs88STP0Ks1unvuCZ");	})(); //funcion auto invocada
 var myform = $("form#myform");
