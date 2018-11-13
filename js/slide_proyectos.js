@@ -14,7 +14,7 @@ function generarItem(proyecto)
 	} 
 	else 
 	{
-		url = `subpaginas/proyectos.html`
+		url = `subpaginas/proyectos_${proyecto.nombre}.html`
 	}
 	if (proyecto.entregado) 
 	{

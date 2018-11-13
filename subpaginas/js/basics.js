@@ -16,7 +16,3 @@ $menuNavegacion.addEventListener("click", ()=>
 	document.body.classList.remove("sinScroll");
 });
 
-function enviarMensajeWhatsapp()
-{
-	
-}

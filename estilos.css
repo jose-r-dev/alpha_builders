@@ -119,7 +119,7 @@ h1 div:last-of-type {float: right;}
 	visibility: hidden;}
 .seccionConstructora .contenedor .contenedorGeneralTexto {max-width: 30%; }
 .seccionConstructora .contenedor .contenedorGeneralTexto div {max-width: 100%; border: #58595B 2px solid; }
-.seccionConstructora .contenedor .contenedorGeneralTexto div div {border: none; padding: 0px; transform: translateX(-30px) translateY(-30px); 
+.seccionConstructora .contenedor .contenedorGeneralTexto div div {border: none; padding: 0px; transform: translateX(+20px) translateY(-25px); 
 	padding: 40px; background-color: white}
 .seccionConstructora .contenedor div a {margin-right: 30%; margin-left: auto; margin-top: 20px}
 .seccionConstructora .contenedor .contenedorGeneralTexto div div figure {max-width: 100px; margin-top: 25px}
@@ -157,9 +157,10 @@ box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 20px}
 .seccionProyectos .itemProyecto .columnas .columna:first-of-type {margin: 0 70px}
 .seccionProyectos .itemProyecto .columnas .columna:last-of-type {margin: 0 }
 .seccionProyectos .itemProyecto .columnas .columna div {margin-bottom: 40px}
+.seccionProyectos .itemProyecto .columnas .columna div:last-of-type  {margin-top: 50px}
 .seccionProyectos .itemProyecto .columnas .columna div:first-of-type p{text-align: right}
 .seccionProyectos .itemProyecto .columnas .columna div:first-of-type p:first-of-type {font-weight: 700; font-size: 26px}
-.seccionProyectos .itemProyecto .columnas .columna div:last-of-type p{font-size: 14px}
+.seccionProyectos .itemProyecto .columnas .columna div:last-of-type p{font-size: 14px; }
 .seccionProyectos .itemProyecto .columnas .columna figure {max-width: 250px; margin-bottom: 20px}
 
 .seccionProyectos .contenedorProyectos .listaProyectos ul {display: flex; justify-content: space-around; margin-bottom: 30px;}
