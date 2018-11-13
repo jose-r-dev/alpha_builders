@@ -193,15 +193,17 @@
 		<section class="seccionContactos" id="seccionContactos">
 			<h2>Contáctanos</h2>
 			<p>Nos interesa mantenerte al tanto de nuestros proyectos. Llena el siguiente formulario y sé parte del	grupo selecto de inversionistas inteligentes.</p>
+			<p style="font-size:11px">Llena todos los campos para enviar el formulario</p>
 
 			<div class="formulario">
 				<form id="myform" >
-					<input type="text" placeholder="Nombres y Apellidos" name="nombre_persona">
+					<input type="text" placeholder="Nombres y Apellidos" name="nombre_persona" >
 					<input type="mailto" placeholder="Correo electrónico" name="correo_persona">
 					<input type="tel" placeholder="Teléfono" name="telefono_persona">
 					<div>
 						<label for="selectProyectos">Proyecto:</label>
 						<select name="nombre_proyecto" id="selectProyectos">
+							<option value="vacio"></option>
 							<option value="dablanc">Dablanc</option>
 							<option value="tesla">Tesla</option>
 							<option value="asimov">Asimov</option>
@@ -209,13 +211,14 @@
 						</select>
 						<label for="tipoDepartamento">Tipo:</label>
 						<select name="tipo_proyecto" id="tipoDepartamento" >
+							<option value="vacio"></option>
 							<option value="suite">Suite</option>
 							<option value="departamento_2dormitorios">Departamento 2 dormitorios</option>
 							<option value="departamento_3dormitorios">departamento 3 dormitorios</option>
 						</select>
 
 					</div>
-					<input type="submit" value="Enviar" class="boton">
+					<input type="submit" value="Enviar" class="boton" id="botonEnviar">
 
 				</form>
 

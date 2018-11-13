@@ -1,6 +1,9 @@
 
 const $botonMenu = document.getElementById("botonMenu");
 const $menuNavegacion = document.getElementById("menuNav");
+const $botonEnviar = document.getElementById("botonEnviar")
+var myform = $("form#myform");
+var entradas = myform.find("input");
 
 $botonMenu.addEventListener("click", ()=> {
 	$menuNavegacion.classList.toggle ("visible");
@@ -25,7 +28,7 @@ function detectarPosicionElemento(elemento)
 }
 
 (function()	{	emailjs.init("user_LULCOs88STP0Ks1unvuCZ");	})(); //funcion auto invocada
-var myform = $("form#myform");
+
 myform.submit(function(event)
 {
 	event.preventDefault();
@@ -39,13 +42,14 @@ myform.submit(function(event)
 		{ 
 			alert("Formulario enviado!");
 			// borrar textos inputs
-			var entradas = myform.find("input");
+			
 			console.log(entradas);
 			for (let i = 0; i < 3; i++) 
 			{
 				entradas[i].value = "";
 				entradas[i].disabled=true;
 			}
+			$botonEnviar.disabled=true;
 			//fin bloque
 			myform.find("button").text("Send");
 		}, 
@@ -57,3 +61,21 @@ myform.submit(function(event)
 
 		return false;
 });
+
+
+function validarDatosObligatorios()
+{
+	if ( (entradas[0].value != "") && (entradas[1].value != "") )
+	{
+		$botonEnviar.disabled=false;
+	}
+	else
+	{
+		$botonEnviar.disabled=true;
+	}
+	
+}
+
+$botonEnviar.disabled=true;
+entradas[0].addEventListener("change",()=> validarDatosObligatorios());
+entradas[1].addEventListener("change",()=> validarDatosObligatorios());
