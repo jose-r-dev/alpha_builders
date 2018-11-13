@@ -107,13 +107,13 @@
 
 		<section class="seccionConstructora" id="seccionConstructora">
 			<div class="contenedor">
-					<div class="contenedorGeneralVideo">
-					<div>
-						<video src="assets/video_empresarial.m4v" >Tu navegador no es compatible con VIDEO HTML5</video>
-						<div class="botonPlay" id="botonPlay">►</div>
-					</div>
-					<a href="" class="boton" id="botonVerMasConstructora"><span>Ver más</span></a>
+				<div class="contenedorGeneralVideo">
+				<div>
+					<video src="assets/video_empresarial.m4v" >Tu navegador no es compatible con VIDEO HTML5</video>
+					<div class="botonPlay" id="botonPlay">►</div>
 				</div>
+				<a href="" class="boton" id="botonVerMasConstructora"><span>Ver más</span></a>
+			</div>
 				<div class="contenedorGeneralTexto">
 					<div>
 						<div>
@@ -142,9 +142,9 @@
 			</div>
 			<div class="contenedorProyectos">
 				<div class="contenedor slides" id="contenedorSlides">
-					<div class="itemProyecto" style="background-image: url(assets/proyectos/foto_lafuente.png)">
+					<div class="itemProyecto" id="contenedorProyecto" style="background-image: url(assets/proyectos/foto_lafuente.png)">
 						<div class="columnas">
-							<div class="columna">
+							<div class="columna" id="columnaTxtAnim">
 								<div>
 									<p>Entrega</p>
 									<p>2020</p>
@@ -199,7 +199,24 @@
 					<input type="text" placeholder="Nombres y Apellidos" name="nombre_persona">
 					<input type="mailto" placeholder="Correo electrónico" name="correo_persona">
 					<input type="tel" placeholder="Teléfono" name="telefono_persona">
+					<div>
+						<label for="selectProyectos">Proyecto:</label>
+						<select name="proyecto" id="selectProyectos">
+							<option value="dablanc">Dablanc</option>
+							<option value="tesla">Tesla</option>
+							<option value="asimov">Asimov</option>
+							<option value="lafuente">La Fuente</option>
+						</select>
+						<label for="tipoDepartamento">Tipo:</label>
+						<select name="tipo" id="tipoDepartamento" >
+							<option value="suite">Suite</option>
+							<option value="departamento_2dormitorios">Departamento 2 dormitorios</option>
+							<option value="departamento_3dormitorios">departamento 3 dormitorios</option>
+						</select>
+
+					</div>
 					<input type="submit" value="Enviar" class="boton">
+
 				</form>
 
 			</div>

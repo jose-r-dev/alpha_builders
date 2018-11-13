@@ -5,6 +5,10 @@ let $videoDom = document.querySelector(".seccionConstructora .contenedor .conten
 let $contenedorConstructora = document.querySelector(".seccionConstructora .contenedor");
 let indiceTemplates = 1;
 
+// elementos especificos para animacion
+let $contenedorGeneralVideo = document.querySelector(".seccionConstructora .contenedor .contenedorGeneralVideo")
+let $contenedorGeneralTexto = document.querySelector(".seccionConstructora .contenedor .contenedorGeneralTexto ")
+
 function generarTemplate(indice)
 {
 	const templates = [];
@@ -91,12 +95,29 @@ function generarEventoClickVer()
 	{
 		event.preventDefault();
 		$contenedorConstructora.classList.add("invisible");
+		
 		setTimeout(()=>
 		{
 			$contenedorConstructora.innerHTML = generarTemplate(indiceTemplates);
 			$contenedorConstructora.classList.remove("invisible");
 			recargarElementosDom();
+
+			setTimeout( ()=>
+			{
+				try 
+				{
+					$contenedorGeneralTexto.classList.add("movimiento0");
+					$contenedorGeneralVideo.classList.add("movimiento0");
+				}
+				catch (error)
+				{
+					console.log(error)
+				}
+			},200);
+			
 			indiceTemplates = indiceTemplates >= 2 ? 0 : indiceTemplates+1;
+
+			
 		}, 500);
 	});
 }
@@ -114,6 +135,16 @@ function recargarElementosDom()
 	catch (error) 
 	{
 		console.log("elemento inexistente" + error)	
+	}
+
+	try 
+	{
+		$contenedorGeneralVideo = document.querySelector(".seccionConstructora .contenedor .contenedorGeneralVideo");
+		$contenedorGeneralTexto = document.querySelector(".seccionConstructora .contenedor .contenedorGeneralTexto ");
+	} 
+	catch (error) 
+	{
+		console.log("elemento inexistente" + error);
 	}
 }
 
@@ -135,7 +166,22 @@ function asignarEventoPlay ()
 
 }
 
+
+function AnimacionConstructoraPrimerScroll ()
+{
+	$contenedorGeneralVideo.classList.add("movimiento0");
+	setTimeout( ()=>
+	{
+		$contenedorGeneralTexto.classList.add("movimiento0");
+		console.log("animacion scroll constructora")
+
+	}, 600)
+}
+
+
+
 recargarElementosDom();
+
 
 window.onload = ()=>
 {
@@ -146,4 +192,23 @@ window.onload = ()=>
 		
 
 	}, 200)
+
 }
+
+window.addEventListener("scroll", ()=>
+{
+	if (window.scrollY >= detectarPosicionElemento($contenedorConstructora) - 900 && window.scrollY <= detectarPosicionElemento($botonVerMasConstructora) + 500)
+	{
+		setTimeout(()=>
+		{
+			try
+			{
+				AnimacionConstructoraPrimerScroll();
+				
+			}
+			catch(error){}
+		},300);
+		
+	} 
+
+})

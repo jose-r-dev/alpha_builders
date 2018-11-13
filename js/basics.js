@@ -16,7 +16,13 @@ $menuNavegacion.addEventListener("click", ()=>
 	document.body.classList.remove("sinScroll");
 });
 
-
+function detectarPosicionElemento(elemento)
+{
+	let posicionWindowY = window.scrollY;
+	let coordenadas = elemento.getBoundingClientRect();
+	let posicionElementoY = posicionWindowY + coordenadas.y;
+	return posicionElementoY;
+}
 
 (function()	{	emailjs.init("user_LULCOs88STP0Ks1unvuCZ");	})(); //funcion auto invocada
 var myform = $("form#myform");
