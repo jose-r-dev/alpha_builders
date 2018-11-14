@@ -30,7 +30,7 @@ function generarTemplate(indice)
 					<div class="contenedorGeneralTexto">
 						<div>
 							<div>
-								<h3>La experiencia de ALPHA BUILDERS BY HOMEPLUS en la construcción es amplia.</h3>
+								<h3>Abre la puerta de las grandes inversiones.</h3>
 								<p>
 										Poseemos los equipos, el talento humano capacitado
 										y el conocimiento necesario para el desarrollo de
