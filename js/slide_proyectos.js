@@ -8,6 +8,7 @@ function generarItem(proyecto)
 {
 	let url;
 	let entregado;
+	let vendido;
 	if (proyecto.landing) 
 	{
 		url = `landings/${proyecto.nombre}/landing_${proyecto.nombre}.html`;	
@@ -26,8 +27,12 @@ function generarItem(proyecto)
 	}
 	if (proyecto.vendido) 
 	{
-		entregado = "Vendido 100%"	
+		vendido = "Vendido 100%"	
 	} 
+	else
+	{
+		vendido="";
+	}
 
 
 	let template = `<div class="itemProyecto" id="contenedorProyecto" style="background-image: url(assets/proyectos/foto_${proyecto.nombre}.png)">
@@ -36,6 +41,7 @@ function generarItem(proyecto)
 								<div>
 									<p>${entregado}</p>
 									<p>${proyecto.entrega} </p>
+									<p>${vendido}</p>
 								</div>
 								<div>
 									<p>Sector</p>

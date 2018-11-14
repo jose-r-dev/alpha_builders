@@ -28,12 +28,14 @@
 	
 	
 	.seccionPortada {margin-top: 10px}
+
 	.seccionPortada h2 {font-size: 20px}
 	.seccionPortada h3 {font-size: 15px}
 	.seccionPortada .contenedor {flex-direction: column}
 	.seccionPortada .contenedor div {width: 100%; margin-bottom: 30px}
 
 	.seccionInterior .columnas .columna {width: 100%}
+	.seccionInterior .contenedor {max-width: 100%;}
 
 	.seccionDiferenciadores .columnas {flex-direction: column-reverse}
 
@@ -45,8 +47,8 @@
 
 	.botonWhatsapp {font-size: 20px; padding: 20px}
 
-	.slides {margin-bottom: 0;}
-	.slides .contenedorDesplazamiento {height: 40vw ;}
+	.slides {margin-bottom: 0; height: 50vw !important;}
+	.slides .contenedorDesplazamiento {height: 50vw  ;}
 	
 	
 

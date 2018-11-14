@@ -90,8 +90,14 @@ function crearContadores(arreglo)
 AsignarEventosClick($botonesIzquierdas, IZQ);
 AsignarEventosClick($botonesDerechas, DER);
 
+try {
+	setWidthUl($conjuntoSlides[0].querySelector("ul"));
+	setWidthUl($conjuntoSlides[1].querySelector("ul"));
+		
+} catch (error) {
+	
+}
 
-setWidthUl($conjuntoSlides[0].querySelector("ul"));
 
 
 crearContadores($conjuntoSlides);

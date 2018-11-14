@@ -97,12 +97,13 @@ h1 div:last-of-type {float: right;}
 .seccionPortada {margin: 150px auto}
 .seccionPortada .logo {max-width: 200px; margin: 0 auto; margin-bottom: 20px}
 .seccionPortada h2 {font-size: 32px; text-transform: initial;}
-.seccionPortada h3 {font-weight: 700; font-size: 18px; text-align: left; margin-left: 25px; margin-bottom: 100px}
+.seccionPortada p {text-align: center; margin-top: 10px}
+.seccionPortada h3 {font-weight: 700; font-size: 18px; text-align: left; margin-left: 25px;}
 .seccionPortada .contenedor {justify-content: space-around; margin-top: 50px }
 .seccionPortada .contenedor div { position: relative;}
 .seccionPortada .columnas {align-items: flex-end}
 .seccionPortada .columna:first-of-type {max-width: 20%;}
-.seccionPortada .columna:last-of-type {max-width: 20%;}
+.seccionPortada .columna:last-of-type {max-width: 30%;}
 .seccionPortada h4 {font-weight: 700; font-size: 16px; text-transform: uppercase; border: #58595B 2px thick; padding: 15px 20px; 
 	box-shadow: rgba(0, 0, 0, 0.4) 2px 3px 15px; margin: 20px 0px; cursor: pointer;}
 .seccionPortada .contenedor .detalles {width: 100%; text-align: left; transform: scaleY(0); position: absolute; background-color: white; box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 5px;
@@ -110,7 +111,8 @@ h1 div:last-of-type {float: right;}
 
 
 /* -----------------------------------INTERIOR--------------------------------*/
-.seccionInterior .slides {height: 44vw;}
+.seccionInterior .contenedor {max-width: 70%;}
+.seccionInterior .slides {height: 42vw;}
 
 
 /* ----------------------------------------DIFERENCIADORES--------------------------- */

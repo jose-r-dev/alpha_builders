@@ -56,7 +56,7 @@
 
 	h1 {margin: 0; }
 	h1 div {transform: none !important; font-size: 18px; margin-bottom: 10px; max-width: max-content; float: initial !important;
-		display: block}
+		display: block; text-align: left}
 	
 	.seccionPortada {margin-top: 10px; margin-bottom: 30px}
 	.seccionPortada h2 {font-size: 20px}
@@ -66,7 +66,7 @@
 
 	.seccionConstructora .contenedor .contenedorGeneralTexto {max-width: 90% !important; }
 	.seccionConstructora .contenedor .contenedorGeneralTexto.trayectoria .filaTexto div:first-child {max-width: 90% !important;}
-	.seccionConstructora .contenedor .contenedorGeneralTexto div div {padding: 15px; transform: translateX(-15px) translateY(-15px); }
+	.seccionConstructora .contenedor .contenedorGeneralTexto div div {padding: 15px;  }
 	
 	.seccionProyectos h2 {font-size: 40px}
 	.seccionProyectos .contenedorProyectos {min-height: auto}

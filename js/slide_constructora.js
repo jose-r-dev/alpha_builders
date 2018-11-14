@@ -9,6 +9,14 @@ let indiceTemplates = 1;
 let $contenedorGeneralVideo = document.querySelector(".seccionConstructora .contenedor .contenedorGeneralVideo")
 let $contenedorGeneralTexto = document.querySelector(".seccionConstructora .contenedor .contenedorGeneralTexto ")
 
+//parametros zoomy
+let options = {
+	zoomFactor: 1.8,
+	class: 'zoomy',
+	direction: 'horizontal',
+	cursor: true
+};
+
 function generarTemplate(indice)
 {
 	const templates = [];
@@ -67,14 +75,14 @@ function generarTemplate(indice)
 									<div>
 										<h3>Trayectoria</h3>
 										<p>
-											Reinventamos la vida urbana
+											Construimos tu legado.
 										</p>
 
 									</div>
 									<figure>
 										<img src="assets/fondo_trayectoria.jpg" alt="">			
 									</figure>
-									<div class="fila">
+									<div class="fila zoomy">
 										<figure>
 											<img src="assets/trayectoria.png" alt="">
 										</figure>
@@ -146,6 +154,7 @@ function recargarElementosDom()
 	{
 		console.log("elemento inexistente" + error);
 	}
+	initZoomy(options);
 }
 
 function asignarEventoPlay ()
@@ -206,9 +215,17 @@ window.addEventListener("scroll", ()=>
 				AnimacionConstructoraPrimerScroll();
 				
 			}
-			catch(error){}
+			catch(error)
+			{
+
+			}
 		},300);
 		
 	} 
 
 })
+
+
+
+	
+	

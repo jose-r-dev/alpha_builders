@@ -106,8 +106,8 @@ header ul li {display: inline; text-transform: uppercase; margin: 0px 20px; font
 .seccionUbicacion .columna:first-of-type {margin: 0px auto }
 .seccionUbicacion .columna:last-of-type {max-width: 40%;}
 .seccionUbicacion .columna h3 {text-align: left; font-weight: 700}
-.seccionUbicacion .columnas .columna:first-of-type a {background-color: #DFE0E0; border: none; border-radius: 35px; color: #221F20; text-transform: uppercase; font-size: 18px;
-	 margin: 50px auto; padding: 10px 20px; cursor: pointer;}
+.seccionUbicacion .columnas .columna:first-of-type a {background-color: #DFE0E0; border: none; border-radius: 35px; color: #221F20; text-transform: uppercase; 
+	font-size: 18px; padding: 10px 20px; cursor: pointer; display: block; margin-bottom: 20px}
 
 
 /* ----PRECIOS---- */
