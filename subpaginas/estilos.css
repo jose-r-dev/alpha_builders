@@ -99,6 +99,7 @@ h1 div:last-of-type {float: right;}
 .seccionPortada h2 {font-size: 32px; text-transform: initial;}
 .seccionPortada p {text-align: center; margin-top: 10px}
 .seccionPortada h3 {font-weight: 700; font-size: 18px; text-align: left; margin-left: 25px;}
+.seccionPortada ol:first-of-type {margin-bottom: 35px}
 .seccionPortada .contenedor {justify-content: space-around; margin-top: 50px }
 .seccionPortada .contenedor div { position: relative;}
 .seccionPortada .columnas {align-items: flex-end}
