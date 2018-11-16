@@ -21,9 +21,10 @@ $menuNavegacion.addEventListener("click", ()=>
 
 function detectarPosicionElemento(elemento)
 {
+	
 	let posicionWindowY = window.scrollY;
 	let coordenadas = elemento.getBoundingClientRect();
-	let posicionElementoY = posicionWindowY + coordenadas.y;
+	let posicionElementoY = posicionWindowY + coordenadas.top;
 	return posicionElementoY;
 }
 

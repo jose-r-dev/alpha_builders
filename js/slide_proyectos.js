@@ -78,7 +78,7 @@ function generarEventosClick(elementosHTML, objetoJSON)
 
 function clickProyecto (elemento, proyecto)
 {
-	elemento.addEventListener("click", () =>
+	elemento.onclick = () =>
 		{
 			$contenedorSlides.classList.add("invisible");
 			
@@ -100,7 +100,7 @@ function clickProyecto (elemento, proyecto)
 			{
 				$columnaTextoAnimado.classList.add("movimiento0");
 			}, 800)
-		} )
+		}
 
 }
 
@@ -128,7 +128,7 @@ function primeraAnimacionProyectos()
 }
 
 
-document.addEventListener("scroll",  ()=> primeraAnimacionProyectos());
+// document.addEventListener("scroll",  ()=> primeraAnimacionProyectos());
 
 
 $contenedorProyecto = document.getElementById("contenedorProyecto");

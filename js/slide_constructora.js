@@ -99,9 +99,9 @@ function generarTemplate(indice)
 
 function generarEventoClickVer()
 {
-	$botonVerMasConstructora.addEventListener("click", ()=>
+	$botonVerMasConstructora.onclick = ()=>
 	{
-		event.preventDefault();
+		
 		$contenedorConstructora.classList.add("invisible");
 		
 		setTimeout(()=>
@@ -127,7 +127,9 @@ function generarEventoClickVer()
 
 			
 		}, 500);
-	});
+
+		return false;
+	};
 }
 
 function recargarElementosDom()
@@ -204,26 +206,35 @@ window.onload = ()=>
 
 }
 
-window.addEventListener("scroll", ()=>
+document.onscroll = function ()
 {
 	if (window.scrollY >= detectarPosicionElemento($contenedorConstructora) - 900 && window.scrollY <= detectarPosicionElemento($botonVerMasConstructora) + 500)
 	{
+		
 		setTimeout(()=>
 		{
 			try
 			{
+				
 				AnimacionConstructoraPrimerScroll();
 				
 			}
 			catch(error)
 			{
+				
 
 			}
 		},300);
 		
 	} 
 
-})
+	primeraAnimacionProyectos();
+	
+
+}
+
+
+
 
 
 

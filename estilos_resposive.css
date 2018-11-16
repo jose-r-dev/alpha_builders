@@ -63,6 +63,7 @@
 	.seccionPortada h3 {font-size: 15px}
 	.seccionPortada .contenedor {flex-direction: column}
 	.seccionPortada .contenedor div {width: 100%; margin-bottom: 30px}
+	.seccionPortada .contenedor div:focus .detalles, .seccionPortada .contenedor div:active .detalles {display: block; transform: scaleY(1); }
 
 	.seccionConstructora .contenedor .contenedorGeneralTexto {max-width: 90% !important; }
 	.seccionConstructora .contenedor .contenedorGeneralTexto.trayectoria .filaTexto div:first-child {max-width: 90% !important;}
@@ -85,6 +86,13 @@
 	footer .columnas .columna * {text-align: center !important}
 
 	.botonWhatsapp {font-size: 20px; padding: 20px}
+	
+
+	/*desabilitar animaciones basadas en before*/
+	header nav ul li::before, .boton:before {display: none;}
+	header nav ul li:hover, .boton:hover {background-color: #010100}
+
+	
 	
 	
 
