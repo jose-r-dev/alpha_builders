@@ -187,6 +187,14 @@ function AnimacionConstructoraPrimerScroll ()
 		console.log("animacion scroll constructora")
 
 	}, 600)
+
+	let $fuenteVideo = $contenedorGeneralVideo.querySelector("video");
+	if ($fuenteVideo.getAttribute("src") == null || $fuenteVideo.getAttribute("src") == "" ) 
+	{
+		$fuenteVideo.setAttribute("src" , "assets/video_empresarial.m4v");
+		
+	} 
+
 }
 
 
