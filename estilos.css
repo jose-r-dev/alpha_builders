@@ -43,7 +43,7 @@
 /* -----------------------------------------ESTILOS GLOBALES--------------------------------------------- */
 
 
-body {font-family: 'Poppins', sans-serif; color: #58595B; width: 100%; position: relative; max-width: 100vw; font-size: 18px; font-weight: 400; }
+body {font-family: 'Poppins', sans-serif; color: #58595B; width: 100%; position: relative; max-width: 100vw; font-size: 18px; font-weight: 400; overflow-x: hidden;}
 p {line-height: 150%;}
 section, header, footer {width: 100%; position: relative;}
 section {background-color: white;}
