@@ -56,7 +56,7 @@
 
 	h1 {margin: 0; }
 	h1 div {transform: none !important; font-size: 18px; margin-bottom: 10px; max-width: max-content; float: initial !important;
-		display: block; text-align: left}
+		display: block; text-align: left; border: none; text-decoration: underline}
 	
 	.seccionPortada {margin-top: 10px; margin-bottom: 30px}
 	.seccionPortada h2 {font-size: 20px}

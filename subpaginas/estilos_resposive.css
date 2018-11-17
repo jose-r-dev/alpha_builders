@@ -49,6 +49,11 @@
 
 	.slides {margin-bottom: 0; height: 50vw !important;}
 	.slides .contenedorDesplazamiento {height: 50vw  ;}
+
+	
+	/*desabilitar animaciones basadas en before*/
+	header nav ul li::before, .boton:before {display: none;}
+	header nav ul li:hover, .boton:hover {background-color: #010100}
 	
 	
 

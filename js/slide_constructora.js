@@ -58,11 +58,11 @@ function generarTemplate(indice)
 							<div>
 								<h3>Misión</h3>
 								<p>
-									Dar a nuestros inversionistas soluciones inmobiliarias de primer nivel , enfocadas en la inteligencia constructiva y financiera.
+									Dar a nuestros inversionistas soluciones inmobiliarias de primer nivel, enfocadas en la inteligencia constructiva y financiera.
 								</p>
 								<h3>Visión</h3>
 								<p>
-									Ser la empresa líder en construcción e inversiones inmobiliarias inteligente en Ecuador para el año 2020.
+									Ser la empresa líder en construcción e inversiones inmobiliarias inteligentes en Ecuador para el año 2020.
 								</p>
 							</div>
 
