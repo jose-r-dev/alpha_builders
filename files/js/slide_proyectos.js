@@ -12,11 +12,11 @@ function generarItem(proyecto)
 	let vendido;
 	if (proyecto.landing) 
 	{
-		url = `landings/${proyecto.nombre}/landing_${proyecto.nombre}.html`;	
+		url = `files/landings/${proyecto.nombre}/landing_${proyecto.nombre}.html`;	
 	} 
 	else 
 	{
-		url = `subpaginas/proyectos_${proyecto.nombre}.html`
+		url = `files/subpaginas/proyectos_${proyecto.nombre}.html`
 	}
 	if (proyecto.entregado) 
 	{
@@ -36,7 +36,7 @@ function generarItem(proyecto)
 	}
 
 
-	let template = `<div class="itemProyecto" id="contenedorProyecto" style="background-image: url(assets/proyectos/foto_${proyecto.nombre}.png)">
+	let template = `<div class="itemProyecto" id="contenedorProyecto" style="background-image: url(files/assets/proyectos/foto_${proyecto.nombre}.png)">
 						<div class="columnas">
 							<div class="columna" id="columnaTxtAnim">
 								<div>
@@ -52,7 +52,7 @@ function generarItem(proyecto)
 							</div>
 							<div class="columna">
 								<figure>
-									<img src="assets/proyectos/logo_${proyecto.nombre}.png" alt="logo">
+									<img src="files/assets/proyectos/logo_${proyecto.nombre}.png" alt="logo">
 								</figure>
 								<a href="${url}" class="boton" id="botonVerProyecto"><span>Ver más</span></a>
 							</div>

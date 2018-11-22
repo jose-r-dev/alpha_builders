@@ -4,8 +4,8 @@ let $botonPlay = document.getElementById("botonPlay");
 let $botonSiguiente = document.getElementById("botonSiguiente");
 let $videoDom = document.querySelector(".seccionConstructora .contenedor .contenedorGeneralVideo video");
 let propiedadesVideos = [
-	{src:"assets/video_empresarial.m4v",fondo:"assets/fondo_video.jpg"},
-	{src:"assets/video_edificios.mov",fondo:"assets/fondo_video_edificios.jpg"}];
+	{src:"files/assets/video_empresarial.m4v",fondo:"files/assets/fondo_video.jpg"},
+	{src:"files/assets/video_edificios.mov",fondo:"files/assets/fondo_video_edificios.jpg"}];
 let indiceVideos = 1;
 let $contenedorConstructora = document.querySelector(".seccionConstructora .contenedor");
 let indiceTemplates = 1;
@@ -27,17 +27,17 @@ function generarTemplate(indice)
 	const templates = [];
 	templates[0] = `<div class="contenedorGeneralVideo">
 						<div>
-							<video type="video/mp4" style="background-image : url('assets/fondo_video.jpg'); background-size: contain ">
+							<video type="video/mp4" style="background-image : url('files/assets/fondo_video.jpg'); background-size: contain ">
 								Navegador no compatible con VideoHTML5
 							</video>
 							<div class="botonPlay" id="botonPlay">
 								<figure>
-									<img src="assets/boton_play.png" alt="">
+									<img src="files/assets/boton_play.png" alt="">
 								</figure>
 							</div>
 							<div class="botonPlay" id="botonSiguiente">
 								<figure>
-									<img src="assets/boton_siguiente.png" alt="">
+									<img src="files/assets/boton_siguiente.png" alt="">
 								</figure>
 							</div>
 						</div>
@@ -54,7 +54,7 @@ function generarTemplate(indice)
 										y exigencias de los nuevos tiempos
 								</p>
 								<figure>
-									<img src="assets/firma.png" alt="firma">
+									<img src="files/assets/firma.png" alt="firma">
 								</figure>
 
 							</div>
@@ -64,7 +64,7 @@ function generarTemplate(indice)
 	templates[1] = `<div class="contenedorGeneralVideo">
 						<div>
 							<figure>
-								<img src="assets/fondo_mision_vision.jpg" alt="fondo">
+								<img src="files/assets/fondo_mision_vision.jpg" alt="fondo">
 							</figure>
 						</div>
 						<a href="" class="boton" id="botonVerMasConstructora"><span>Ver más</span></a>
@@ -96,11 +96,11 @@ function generarTemplate(indice)
 
 									</div>
 									<figure>
-										<img src="assets/fondo_trayectoria.jpg" alt="">			
+										<img src="files/assets/fondo_trayectoria.jpg" alt="">			
 									</figure>
 									<div class="fila zoomy">
 										<figure>
-											<img src="assets/trayectoria.png" alt="">
+											<img src="files/assets/trayectoria.png" alt="">
 										</figure>
 									</div>
 									<a href="" class="boton" id="botonVerMasConstructora"><span>Ver más</span></a>
@@ -184,12 +184,12 @@ function asignarEventoPlay ()
 		if ($videoDom.paused == true) 
 		{
 			$videoDom.play();
-			$botonPlay.querySelector("img").src = "assets/boton_pause.png";
+			$botonPlay.querySelector("img").src = "files/assets/boton_pause.png";
 		} 
 		else 
 		{
 			$videoDom.pause();
-			$botonPlay.querySelector("img").src = "assets/boton_play.png";
+			$botonPlay.querySelector("img").src = "files/assets/boton_play.png";
 		}
 	});
 
@@ -220,7 +220,7 @@ function AnimacionConstructoraPrimerScroll ()
 	let $fuenteVideo = $contenedorGeneralVideo.querySelector("video");
 	if ($fuenteVideo.getAttribute("src") == null || $fuenteVideo.getAttribute("src") == "" ) 
 	{
-		$fuenteVideo.setAttribute("src" , "assets/video_empresarial.m4v");
+		$fuenteVideo.setAttribute("src" , "files/assets/video_empresarial.m4v");
 		
 	} 
 
