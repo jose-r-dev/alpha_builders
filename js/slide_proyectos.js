@@ -1,6 +1,7 @@
 
 const $itemsProyectos = document.querySelectorAll("#listaProyectos ul li");
 const $contenedorSlides = document.getElementById("contenedorSlides");
+$contenedorSlides.innerHTML = generarItem(jsonProyectos[localStorage.getItem("proyecto")]);
 let $contenedorProyecto;
 let $columnaTextoAnimado;
 
@@ -70,38 +71,38 @@ function generarEventosClick(elementosHTML, objetoJSON)
 {
 	let indice = 0;
 	elementosHTML.forEach(elemento => {
-		clickProyecto(elemento, objetoJSON[indice] )
+		clickProyecto(elemento, objetoJSON[indice], indice )
 		indice++;
 		
 	});
 }
 
-function clickProyecto (elemento, proyecto)
+function clickProyecto (elemento, proyecto, indice)
 {
-	elemento.onclick = () =>
-		{
-			$contenedorSlides.classList.add("invisible");
-			
-			setTimeout(()=>
-			{
-				$contenedorSlides.innerHTML = generarItem(proyecto);
-				$contenedorSlides.classList.remove("invisible");
-				$contenedorProyecto = document.getElementById("contenedorProyecto");
-				$columnaTextoAnimado = document.getElementById("columnaTxtAnim");
-				
-				
-			}, 500)
+	elemento.onclick = () => clickProyectoEjecutado(proyecto,indice)
 
-			setTimeout(()=>
-			{
-				$contenedorProyecto.classList.add("movimiento0");
-			}, 600)
-			setTimeout(()=>
-			{
-				$columnaTextoAnimado.classList.add("movimiento0");
-			}, 800)
-		}
+}
 
+function clickProyectoEjecutado(proyecto,indice)
+{
+	$contenedorSlides.classList.add("invisible");
+	window.localStorage.setItem("proyecto",indice)
+	setTimeout(()=>
+	{
+		$contenedorSlides.innerHTML = generarItem(proyecto);
+		$contenedorSlides.classList.remove("invisible");
+		$contenedorProyecto = document.getElementById("contenedorProyecto");
+		$columnaTextoAnimado = document.getElementById("columnaTxtAnim");
+	}, 500)
+
+	setTimeout(()=>
+	{
+		$contenedorProyecto.classList.add("movimiento0");
+	}, 600)
+	setTimeout(()=>
+	{
+		$columnaTextoAnimado.classList.add("movimiento0");
+	}, 800);
 }
 
 function animacionScroll ()
@@ -109,6 +110,7 @@ function animacionScroll ()
 	
 	$contenedorProyecto.classList.add("movimiento0");
 	$columnaTextoAnimado.classList.add("movimiento0");
+	
 }
 
 
@@ -135,3 +137,4 @@ $contenedorProyecto = document.getElementById("contenedorProyecto");
 $columnaTextoAnimado = document.getElementById("columnaTxtAnim");
 generarEventosClick($itemsProyectos, jsonProyectos);
 primeraAnimacionProyectos();
+

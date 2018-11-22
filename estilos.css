@@ -82,7 +82,7 @@ header .navegacion {display: flex; padding: 20px 4%; align-items: center; justif
     max-width: 92%; }
 header .navegacion .logo {max-width: 15%;}
 header .navegacion figure {max-width: 100%;}
-header .navegacion nav {margin-left: auto; margin-right: 30px; border: #58595B 2px solid; overflow: hidden;}
+header .navegacion nav {margin-left: auto; margin-right: 30px; border: #58595B 2px solid; overflow: hidden; transform: translateY(-500px); transition: 800ms}
 header .navegacion ul li {display: inline; text-transform: uppercase; font-weight: 700; font-size: 16px; padding: 8px 20px; text-align: left;
 	position: relative; z-index: 1; }
 header .redes ul li {padding: 0px}
@@ -115,8 +115,9 @@ h1 div:last-of-type {float: right;}
 .seccionConstructora .contenedor .contenedorGeneralVideo {max-width: 60%; }
 .seccionConstructora .contenedor .contenedorGeneralVideo div {position: relative;}
 .seccionConstructora .contenedor .contenedorGeneralVideo div .botonPlay {position: absolute; left: 0; right: 0; top: 50%; font-size: 30px; font-weight: 700;
-	background-color: rgba(255, 255, 255, 0.5); display: block; width: 30px; margin: auto; border-radius: 50%; cursor: pointer; padding: 10px;
-	visibility: hidden;}
+	display: block; width: 30px; margin: auto; border-radius: 50%; cursor: pointer; visibility: hidden; opacity: 0.3;}
+.seccionConstructora .contenedor .contenedorGeneralVideo div #botonSiguiente {right: 25%; left: auto; }
+	
 .seccionConstructora .contenedor .contenedorGeneralTexto {max-width: 30%; }
 .seccionConstructora .contenedor .contenedorGeneralTexto div {max-width: 100%; border: #58595B 2px solid; background-color: white }
 .seccionConstructora .contenedor .contenedorGeneralTexto div div {border: none; padding: 0px; transform: translateX(2px) translateY(0px); 
@@ -224,25 +225,19 @@ header nav ul li:hover a {color: white; }
 	transition: 800ms ease-out; ; z-index: -1;}
 .boton:hover:before {width: 100%;}
 
+.boton:active {transform: scale(0.9)}
+
 h1 div {transition: 1000ms}
 h1 div:first-of-type {float: right}
 h1 div:last-of-type {float: left}
-/* h1 div:first-of-type {transform: translateX(-200%)}
-h1 div:last-of-type {transform: translateX(120%)} */
-
-
 
 
 .seccionPortada .contenedor div .detalles {transition : 500ms ; transform-origin: top;}
 .seccionPortada .contenedor div:hover .detalles {display: block; transform: scaleY(1)}
-.seccionPortada .contenedor div figure{animation-name: rebote; animation-direction: alternate; animation-duration: 600ms; animation-iteration-count: infinite;
+.seccionPortada .contenedor div figure {animation-name: rebote; animation-direction: alternate; animation-duration: 600ms; animation-iteration-count: infinite;
 		animation-delay: 200ms; animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1)}
-.seccionPortada .contenedor div:first-of-type figure{animation-delay: 0ms}
-.seccionPortada .contenedor div:last-of-type figure{animation-delay: 400ms}
-
-
-
-
+.seccionPortada .contenedor div:first-of-type figure {animation-delay: 0ms}
+.seccionPortada .contenedor div:last-of-type figure {animation-delay: 400ms}
 
 @keyframes rebote {
 	0% {
@@ -257,7 +252,7 @@ h1 div:last-of-type {transform: translateX(120%)} */
 
 
 .seccionConstructora .contenedor .contenedorGeneralVideo div .botonPlay {transition: 200ms ease-in}
-.seccionConstructora .contenedor .contenedorGeneralVideo div .botonPlay:hover {background-color: white}
+.seccionConstructora .contenedor .contenedorGeneralVideo div .botonPlay:hover {opacity: 1;}
 .seccionConstructora .contenedor .contenedorGeneralVideo:hover .botonPlay {visibility: visible}
 .seccionConstructora .contenedor .contenedorGeneralVideo {transition: 500ms cubic-bezier(0.25, 0.46, 0.45, 1.3); transform: translateX(-1500px); visibility: hidden;}
 .seccionConstructora .contenedor .contenedorGeneralTexto {transition: 500ms cubic-bezier(0.25, 0.46, 0.45, 1.3); transform: translateY(1000px)}
@@ -268,9 +263,21 @@ h1 div:last-of-type {transform: translateX(120%)} */
 .seccionProyectos #columnaTxtAnim {transition: 800ms; transform: translateY(500px); transition-timing-function: cubic-bezier(0.25, 0.3, 0.45, 1.1)}
 
 .seccionProyectos h2 {transition: 800ms ease-out}
-.seccionProyectos:hover h2 {transform: translateX(20px) rotate(180deg) ; }
+.seccionProyectos:hover h2 {animation-name: rebote_horizontal; animation-direction: alternate; animation-duration: 600ms; animation-iteration-count: infinite;
+	animation-delay: 200ms; animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); }
+@keyframes rebote_horizontal {
+	0% {
+	  transform: translateX(20px) rotate(180deg)
+	}
+	
+	100% {
+		transform: translateX(0px) rotate(180deg)
+	}
+}
+
 .seccionProyectos .contenedorProyectos .listaProyectos ul li {transition: 300ms }
 .seccionProyectos .contenedorProyectos .listaProyectos ul li:hover {transform: scale(1.1) }
+.seccionProyectos .contenedorProyectos .listaProyectos ul li:active {transform: scale(0.9)}
 
 
 .seccionProyectos .contenedor.slides {transition: 500ms ease-in; }

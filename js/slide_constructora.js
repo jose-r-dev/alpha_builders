@@ -1,13 +1,18 @@
 let divsH1 = document.querySelectorAll("h1 div");
 let $botonVerMasConstructora;
 let $botonPlay = document.getElementById("botonPlay");
+let $botonSiguiente = document.getElementById("botonSiguiente");
 let $videoDom = document.querySelector(".seccionConstructora .contenedor .contenedorGeneralVideo video");
+let propiedadesVideos = [
+	{src:"assets/video_empresarial.m4v",fondo:"assets/fondo_video.jpg"},
+	{src:"assets/video_edificios.mov",fondo:"assets/fondo_video_edificios.jpg"}];
+let indiceVideos = 1;
 let $contenedorConstructora = document.querySelector(".seccionConstructora .contenedor");
 let indiceTemplates = 1;
 
 // elementos especificos para animacion
 let $contenedorGeneralVideo = document.querySelector(".seccionConstructora .contenedor .contenedorGeneralVideo")
-let $contenedorGeneralTexto = document.querySelector(".seccionConstructora .contenedor .contenedorGeneralTexto ")
+let $contenedorGeneralTexto = document.querySelector(".seccionConstructora .contenedor .contenedorGeneralTexto")
 
 //parametros zoomy
 let options = {
@@ -22,10 +27,21 @@ function generarTemplate(indice)
 	const templates = [];
 	templates[0] = `<div class="contenedorGeneralVideo">
 						<div>
-							<video src="assets/video_empresarial.m4v" >Tu navegador no es compatible con VIDEO HTML5</video>
-							<div class="botonPlay" id="botonPlay">►</div>
+							<video type="video/mp4" style="background-image : url('assets/fondo_video.jpg'); background-size: contain ">
+								Navegador no compatible con VideoHTML5
+							</video>
+							<div class="botonPlay" id="botonPlay">
+								<figure>
+									<img src="assets/boton_play.png" alt="">
+								</figure>
+							</div>
+							<div class="botonPlay" id="botonSiguiente">
+								<figure>
+									<img src="assets/boton_siguiente.png" alt="">
+								</figure>
+							</div>
 						</div>
-						<a href="" class="boton" id="botonVerMasConstructora"><span>Ver más</span></a>
+						<a href="" class="boton" id="botonVerMasConstructora">Ver más</a>
 					</div>
 					<div class="contenedorGeneralTexto">
 						<div>
@@ -139,8 +155,10 @@ function recargarElementosDom()
 	try 
 	{
 		$botonPlay = document.getElementById("botonPlay");
+		$botonSiguiente = document.getElementById("botonSiguiente");
 		$videoDom = document.querySelector(".seccionConstructora .contenedor .contenedorGeneralVideo video");	
 		asignarEventoPlay();
+		asignarEventoSiguiente();
 	} 
 	catch (error) 
 	{
@@ -150,7 +168,7 @@ function recargarElementosDom()
 	try 
 	{
 		$contenedorGeneralVideo = document.querySelector(".seccionConstructora .contenedor .contenedorGeneralVideo");
-		$contenedorGeneralTexto = document.querySelector(".seccionConstructora .contenedor .contenedorGeneralTexto ");
+		$contenedorGeneralTexto = document.querySelector(".seccionConstructora .contenedor .contenedorGeneralTexto");
 	} 
 	catch (error) 
 	{
@@ -166,15 +184,26 @@ function asignarEventoPlay ()
 		if ($videoDom.paused == true) 
 		{
 			$videoDom.play();
-			$botonPlay.innerHTML = "☐";
+			$botonPlay.querySelector("img").src = "assets/boton_pause.png";
 		} 
 		else 
 		{
 			$videoDom.pause();
-			$botonPlay.innerHTML = "►";
+			$botonPlay.querySelector("img").src = "assets/boton_play.png";
 		}
 	});
 
+}
+
+function asignarEventoSiguiente()
+{
+	$botonSiguiente.addEventListener("click", ()=>
+	{
+		$videoDom.setAttribute("src" , propiedadesVideos[indiceVideos].src);
+		$videoDom.style = `background-image : url('${propiedadesVideos[indiceVideos].fondo}'); background-size: contain`
+		indiceVideos = indiceVideos >= 1 ? 0 : 1;
+
+	});
 }
 
 
@@ -204,13 +233,47 @@ recargarElementosDom();
 
 window.onload = ()=>
 {
+
+	
 	setTimeout( ()=>
 	{
+		$menuNavegacion.style = "transform:none"
 		divsH1[0].style = "transform: translateX(-200%)";
 		divsH1[1].style = "transform: translateX(120%)";
+		let spans = [];
+		spans[0] = divsH1[0].getElementsByTagName("span")[0];
+		spans[1] = divsH1[1].getElementsByTagName("span")[0];
+		let direccion = 1;
+		setInterval( ()=>
+		{
+			
+			if (direccion == 1) 
+			{ 
+				divsH1[0].style = `transform: translateX(0) ; `;
+				divsH1[1].style = `transform: translateX(0) ; `;
+			}
+			else 
+			{ 
+				divsH1[0].style = `transform: translateX(-200%) ; `;
+				divsH1[1].style = `transform: translateX(120%) ; `;
+			}
+			
+			
+
+			direccion = direccion*(-1);
+
+			
+			
+
+		}, 5000)
+
+
 		
 
-	}, 200)
+	}, 200);
+
+
+
 
 }
 

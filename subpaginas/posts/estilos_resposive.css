@@ -1,0 +1,66 @@
+
+
+@media all and (max-width: 1270px) 
+{
+	.seccionInterior .columnas .columna:last-of-type ol {margin: 10% auto}
+
+
+
+}
+@media all and (max-width: 1070px) 
+{
+	h1{font-size: 24px;}
+	header .redes {display: none}
+	.seccionPortada {margin: 0px auto}
+}
+
+@media all and (max-width: 870px) 
+{
+	.columnas {flex-direction: column;}
+	.columna {max-width: 90% !important;}
+	header {position: relative; height: 20vh;}
+	header nav {position: absolute; width: 99%; left: 0; height: 100vh; top: 0; bottom: 0; z-index: 1; background-color: #D4D5D6; padding-top: 40px;
+		opacity: 0; transform: translateY(-2000px); transition: 1000ms; transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);}
+	header nav ul li {display: block !important; text-align: right !important; font-size: 20px !important; margin: 20px 10px;}
+	.responsive {display: block;}
+	.visible{opacity: 1; transform: none;}
+
+	
+	
+	.seccionPortada {margin-top: 10px}
+
+	.seccionPortada h2 {font-size: 20px}
+	.seccionPortada h3 {font-size: 15px}
+	.seccionPortada .contenedor {flex-direction: column}
+	.seccionPortada .contenedor div {width: 100%; margin-bottom: 30px}
+
+	.seccionInterior .columnas .columna {width: 100%}
+	.seccionInterior .contenedor {max-width: 100%;}
+
+	.seccionDiferenciadores .columnas {flex-direction: column-reverse}
+
+
+
+	footer .columnas{flex-wrap: wrap}
+	footer .columnas .columna {max-width: 290px; margin: 20px 50px}
+	footer .columnas .columna * {text-align: center !important}
+
+	.botonWhatsapp {font-size: 20px; padding: 20px}
+
+	.slides {margin-bottom: 0; height: 50vw !important;}
+	.slides .contenedorDesplazamiento {height: 50vw  ;}
+
+	
+	/*desabilitar animaciones basadas en before*/
+	header nav ul li::before, .boton:before {display: none;}
+	header nav ul li:hover, .boton:hover {background-color: #010100}
+	
+	
+
+
+
+	
+
+}
+
+
