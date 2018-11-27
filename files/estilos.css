@@ -71,8 +71,9 @@ ol li {list-style: lower-roman; padding-left: 15px; max-width: 100%;}
 .redes ul li span {vertical-align: middle; font-size: 28px}
 .redes ul li:first-of-type a span {border: #58595B solid 3px; border-radius: 50%; font-size: 16px ; padding: 4px; }
 
-.responsive {display: none}
+.responsive, .seo {display: none}
 .sinScroll {overflow: hidden;}
+
 
 
 /* --------------------------------HEADER---------------------------------- */

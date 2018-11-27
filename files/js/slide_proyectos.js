@@ -1,7 +1,7 @@
 
 const $itemsProyectos = document.querySelectorAll("#listaProyectos ul li");
 const $contenedorSlides = document.getElementById("contenedorSlides");
-$contenedorSlides.innerHTML = generarItem(jsonProyectos[localStorage.getItem("proyecto")]);
+
 let $contenedorProyecto;
 let $columnaTextoAnimado;
 
@@ -138,3 +138,11 @@ $columnaTextoAnimado = document.getElementById("columnaTxtAnim");
 generarEventosClick($itemsProyectos, jsonProyectos);
 primeraAnimacionProyectos();
 
+if ( window.localStorage.getItem("proyecto") == undefined || window.localStorage.getItem("proyecto") == null ) 
+{
+	window.localStorage.setItem("proyecto",0)
+	
+} 
+
+
+// $contenedorSlides.innerHTML = generarItem(jsonProyectos[localStorage.getItem("proyecto")]);
