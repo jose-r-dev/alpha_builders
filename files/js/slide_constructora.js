@@ -5,7 +5,7 @@ let $botonSiguiente = document.getElementById("botonSiguiente");
 let $videoDom = document.querySelector(".seccionConstructora .contenedor .contenedorGeneralVideo video");
 let propiedadesVideos = [
 	{src:"files/assets/video_empresarial.m4v",fondo:"files/assets/fondo_video.jpg"},
-	{src:"files/assets/video_edificios.mov",fondo:"files/assets/fondo_video_edificios.jpg"}];
+	{src:"files/assets/video_edificios.mp4",fondo:"files/assets/fondo_video_edificios.jpg"}];
 let indiceVideos = 1;
 let $contenedorConstructora = document.querySelector(".seccionConstructora .contenedor");
 let indiceTemplates = 1;
