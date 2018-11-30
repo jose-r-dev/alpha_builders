@@ -119,24 +119,21 @@ function primeraAnimacionProyectos()
 {
 	if ( (window.scrollY >= detectarPosicionElemento($contenedorProyecto) - 900) && (window.scrollY <= detectarPosicionElemento($contenedorProyecto) + 500) )
 	{
-		setTimeout(()=>
-		{
-			animacionScroll();
-			console.log("animacion proyectos")
-		},300)
+		setTimeout(()=>	animacionScroll(),300)
 		
 	} 
 
 }
 
 
-// document.addEventListener("scroll",  ()=> primeraAnimacionProyectos());
+
+$contenedorSlides.innerHTML = generarItem(jsonProyectos[localStorage.getItem("proyecto")]);
 
 
 $contenedorProyecto = document.getElementById("contenedorProyecto");
 $columnaTextoAnimado = document.getElementById("columnaTxtAnim");
 generarEventosClick($itemsProyectos, jsonProyectos);
-primeraAnimacionProyectos();
+
 
 if ( window.localStorage.getItem("proyecto") == undefined || window.localStorage.getItem("proyecto") == null ) 
 {
@@ -145,4 +142,5 @@ if ( window.localStorage.getItem("proyecto") == undefined || window.localStorage
 } 
 
 
-// $contenedorSlides.innerHTML = generarItem(jsonProyectos[localStorage.getItem("proyecto")]);
+document.addEventListener("scroll",  ()=> primeraAnimacionProyectos());
+primeraAnimacionProyectos();

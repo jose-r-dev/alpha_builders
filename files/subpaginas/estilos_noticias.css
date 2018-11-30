@@ -148,7 +148,7 @@ header nav ul li:hover a {color: white; }
 .timeline::after {
 content: '';
 position: absolute;
-width: 6px;
+width: 4px;
 background-color: #58595B;
 top: 0;
 bottom: 0;
@@ -174,16 +174,17 @@ transition: 700ms
 }
 
 .container:hover::after {transform: scale(1.3);  }
+.container:hover .fecha {left: -25px}
 
 
 /* Fix the circle for containers on the right side */
-.right::after {left: -16px;}
+.right::after {left: -16px; }
 
 /* The actual content */
 .content { padding: 20px 30px; position: relative; border-radius: 6px; }
 
 .fecha {position: absolute; writing-mode: vertical-lr; transform: rotate(180deg); left: -30px; color: #58595B; font-weight: 700; font-size: 14px !important;
-	margin-top: 30px !important  }
+	margin-top: 30px !important; transition: 200ms  }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) 

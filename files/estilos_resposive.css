@@ -21,18 +21,11 @@
 @media all and (max-width: 1270px) 
 {
 	h1{font-size: 30px;}
-	
-	
-	.seccionConstructora .contenedor {}
-	.seccionConstructora .contenedor .contenedorGeneralVideo {max-width: 100% !important; margin-bottom: 50px}
+	.seccionConstructora .contenedor .contenedorGeneralVideo {max-width: 90% !important; margin-bottom: 50px}
 	.seccionConstructora .contenedor .contenedorGeneralTexto {max-width: 60% !important;}
 	.seccionConstructora .contenedor .contenedorGeneralTexto.trayectoria {max-width: 100% !important; }
-	
 	.seccionContactos p {max-width: 80%;}
 	.seccionContactos .formulario {max-width: 80%;}
-
-
-
 }
 @media all and (max-width: 1070px) 
 {
@@ -49,13 +42,14 @@
 {
 	header {height: 70vh; position: relative; background-size: 100vw auto; background-position-y: top; background-image: url("assets/fondo_1_movil.jpg")}
 	header nav {position: absolute; width: 99%; left: 0; height: 100vh; top: 0; bottom: 0; z-index: 1; background-color: #D4D5D6; padding-top: 40px;
-		opacity: 0; transform: translateY(-2000px); transition: 1000ms; transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);}
+		opacity: 0; transform: translateY(-2000px); transition: 1000ms; transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+		animation-duration: 1000ms; border: none}
 	header nav ul li {display: block !important; text-align: right !important; font-size: 20px !important; margin: 20px 10px;}
 	.responsive {display: block;}
 	.visible{opacity: 1; transform: none;}
 
-	.h1 {margin: 0; }
-	.h1 div {transform: none !important; font-size: 18px; margin-bottom: 10px; max-width: max-content; float: initial !important;
+	h1 {margin: 0;}
+	h1 div {transform: none !important; font-size: 18px; margin-bottom: 10px; max-width: max-content; float: initial !important;
 		display: block; text-align: left; border: none; text-decoration: underline}
 	
 	.seccionPortada {margin-top: 10px; margin-bottom: 30px}
@@ -77,7 +71,9 @@
 	.seccionProyectos .contenedorProyectos .listaProyectos ul {flex-wrap: wrap; align-items: center; }
 	.seccionProyectos .contenedorProyectos .listaProyectos ul li {max-width: 15%;}
 
-	.seccionContactos {margin-top: 0px}
+	.seccionContactos {margin-top: 0px; padding-top: 30px;}
+	.seccionContactos h2 {margin: 0 auto;}
+
 	select{width: 100%; display: block}
 	label {width: 100%; display: block; text-align: left}
 

@@ -76,8 +76,6 @@ ol li {list-style: lower-roman; padding-left: 15px; max-width: 100%;}
 
 
 /* --------------------------------HEADER---------------------------------- */
-header{background-image: url("assets/fondo_1.jpg"); background-repeat: no-repeat; 
-	background-size: 100%;  }
 header .navegacion {display: flex; padding: 20px 4%; align-items: center; justify-content: space-between; 
     max-width: 92%; }
 header .navegacion .logo {max-width: 15%;}
@@ -115,15 +113,10 @@ h1 div:last-of-type {float: right;}
 
 .cuerpoPost .fuentes {margin: 50px 0px}
 .cuerpoPost .fuentes a {font-size: 14px}
+.cuerpo .boton:last-of-type {max-width: 200px; margin: 0 auto; margin-bottom: 50px}
 /* -----------------------------------INTERIOR--------------------------------*/
 .seccionInterior .contenedor {max-width: 70%;}
 .seccionInterior .slides {height: 42vw;}
-
-
-/* ----------------------------------------DIFERENCIADORES--------------------------- */
-.seccionDiferenciadores .columna figure {max-width: 60%; margin: 0 auto; }
-
-
 
 
 

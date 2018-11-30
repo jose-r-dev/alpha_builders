@@ -153,6 +153,8 @@ input[type="submit"] {background-color: #DFE0E0; border: none; border-radius: 35
 	max-width: 150px; margin: 50px auto; padding: 10px 0px; cursor: pointer;}
 
 .seccionFormularios .flechaArr {font-size: 34px;}
+.seccionFormularios a {display: block; transition: 500ms; max-width: max-content; margin: 0 auto; margin-top: 50px }
+.seccionFormularios a:last-of-type:hover {transform: translateY(-5px) }
 
 /* ----BOTON LLENAR FORMULARIO---- */
 .llenarFormulario {background-color: rgba(0, 0, 0, 0.6); color: white; text-align: center; padding: 20px 20px; position: fixed;

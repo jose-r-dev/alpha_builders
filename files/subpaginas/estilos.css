@@ -94,7 +94,8 @@ h1 div:last-of-type {float: right;}
 .botonMenu {font-size: 30px; cursor: pointer; display: none; z-index: 1; right: 0; top: 0; position: fixed; margin: 10px 10px }
 
 /* -------------------------------PORTADA----------------------------------------- */
-.seccionPortada {margin: 150px auto}
+.seccionPortada {margin: 150px auto;}
+
 .seccionPortada .logo {max-width: 200px; margin: 0 auto; margin-bottom: 20px}
 .seccionPortada h2 {font-size: 32px; text-transform: initial;}
 .seccionPortada p {text-align: center; margin-top: 10px}
@@ -106,11 +107,12 @@ h1 div:last-of-type {float: right;}
 .seccionPortada .columnas .columna:last-of-type {margin-top: 100px} 
 .seccionPortada .columnas .columna:first-of-type figure {width: 115%;}
 .seccionPortada .columnas .columna:last-of-type figure {max-width: 80%; margin: 50px auto; }
-.seccionPortada .columnas .columna:last-of-type figure:last-of-type {max-width: 80px;}
+.seccionPortada .columnas .columna:last-of-type figure:last-of-type {max-width: 150px;}
 .seccionPortada .columnas .columna:last-of-type p:last-of-type {font-weight: 700}
 
 /* -----------------------------------UBICACION--------------------------------*/
-.seccionUbicacion {background-color: #DFE0E0; padding-top: 50px }
+.seccionUbicacion {background-color: #DFE0E0; padding-top: 10px ; box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 10px; position: relative;}
+.seccionUbicacion svg {position: absolute; width: 100%; top: -28%; z-index: -1; }
 .seccionUbicacion figure {max-width: 400px;}
 
 
@@ -125,7 +127,7 @@ h1 div:last-of-type {float: right;}
 .seccionDiferenciadores .columna figure {max-width: 60%; margin: 0 auto; }
 .seccionDiferenciadores h4 {text-align: center; text-transform: uppercase; font-size: 28px; margin-bottom: 15px}
 .seccionDiferenciadores .columnas:last-of-type {flex-direction: row-reverse}
-
+.seccionDiferenciadores .boton {max-width: 200px; margin: 0 auto; margin-bottom: 100px}
 
 
 

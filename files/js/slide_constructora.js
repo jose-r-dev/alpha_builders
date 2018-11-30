@@ -210,12 +210,8 @@ function asignarEventoSiguiente()
 function AnimacionConstructoraPrimerScroll ()
 {
 	$contenedorGeneralVideo.classList.add("movimiento0");
-	setTimeout( ()=>
-	{
-		$contenedorGeneralTexto.classList.add("movimiento0");
-		console.log("animacion scroll constructora")
-
-	}, 600)
+	
+	setTimeout( ()=>$contenedorGeneralTexto.classList.add("movimiento0"), 600)
 
 	let $fuenteVideo = $contenedorGeneralVideo.querySelector("video");
 	if ($fuenteVideo.getAttribute("src") == null || $fuenteVideo.getAttribute("src") == "" ) 
@@ -237,7 +233,7 @@ window.onload = ()=>
 	
 	setTimeout( ()=>
 	{
-		$menuNavegacion.style = "transform:none"
+		
 		divsH1[0].style = "transform: translateX(-200%)";
 		divsH1[1].style = "transform: translateX(120%)";
 		let spans = [];
@@ -254,8 +250,8 @@ window.onload = ()=>
 			}
 			else 
 			{ 
-				divsH1[0].style = `transform: translateX(-200%) ; `;
-				divsH1[1].style = `transform: translateX(120%) ; `;
+				divsH1[0].style = window.innerWidth > 870 ? `transform: translateX(-200%) ; ` : `transform: translateX(-50%) ; `  ;
+				divsH1[1].style = window.innerWidth > 870 ? `transform: translateX(120%) ; ` : `transform: translateX(10%) ; ` ;
 			}
 			
 			
