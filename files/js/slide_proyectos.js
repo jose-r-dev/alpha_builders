@@ -125,9 +125,22 @@ function primeraAnimacionProyectos()
 
 }
 
+if ( window.localStorage.getItem("proyecto") == undefined || window.localStorage.getItem("proyecto") == null ) 
+{
+	//window.localStorage.setItem("proyecto",0)
+	$contenedorSlides.innerHTML = generarItem(jsonProyectos[0]);
+	
+} 
+else
+{
+	$contenedorSlides.innerHTML = generarItem(jsonProyectos[window.localStorage.getItem("proyecto")]);
+	
+
+}
 
 
-$contenedorSlides.innerHTML = generarItem(jsonProyectos[localStorage.getItem("proyecto")]);
+
+
 
 
 $contenedorProyecto = document.getElementById("contenedorProyecto");
@@ -135,11 +148,6 @@ $columnaTextoAnimado = document.getElementById("columnaTxtAnim");
 generarEventosClick($itemsProyectos, jsonProyectos);
 
 
-if ( window.localStorage.getItem("proyecto") == undefined || window.localStorage.getItem("proyecto") == null ) 
-{
-	window.localStorage.setItem("proyecto",0)
-	
-} 
 
 
 document.addEventListener("scroll",  ()=> primeraAnimacionProyectos());

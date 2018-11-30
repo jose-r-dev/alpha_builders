@@ -53,7 +53,7 @@ img {max-width: 100%; display: block; max-height: 500px}
 video {max-width: 100%;}
 a {color: #58595B; font-weight: 400}
 .boton {border: #58595B 2px solid; text-align: center; padding: 10px 15px; background-color: transparent;
-	font-family: "Montserrat", sans-serif; display: block; max-width: 100px; position: relative; z-index: 1;}
+	font-family: "Montserrat", sans-serif; display: block; max-width: 100px; position: relative; z-index: 1; cursor: pointer;}
 h1,h2,h3,h4 {font-family: "Montserrat"}
 h2, h3 {text-transform: uppercase; text-align: center}
 h3 {font-weight: 400; font-size: 30px; margin: 15px 0px}
